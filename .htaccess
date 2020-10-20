@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Tiender"
+AuthUserFile /home/TDIW/tdiw-e13/public_html/.htpasswd
+Require valid-user
