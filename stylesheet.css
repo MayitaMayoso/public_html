@@ -1,0 +1,10 @@
+﻿.pantalons, .samarretes, .sabates {
+    float: left;
+    width: 32%;
+    border: 1px solid #CEDCEA;
+    padding: 5px;
+}
+
+.header {
+    color: black;
+}
