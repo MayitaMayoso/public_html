@@ -1,10 +1,59 @@
-﻿.pantalons, .samarretes, .sabates {
+﻿.navbar {
+    height: 80px;
+    background-color: #31373d;
+}
+
+.logo {
+    
+    vertical-align: middle;
+
+}
+.navbar a {
+    display: inline;
+    vertical-align: middle;
+    margin-right: 30px;
+    height: 40px;        /* if you want it to take the full height of the bar */
+    line-height: 80px;    /* if you want it vertically middle of the navbar */
+    color: white;
+    text-decoration: none;
+    float: left;
+}
+.navbar a:hover{
+    background-color: white;
+    color: #31373d;
+}
+
+.categorias{
+    padding-top: 20px;
+}
+
+.categorias h1{
+    color: #31373d;
+    text-align: center;
+    font-size: 40px;
+}
+
+.categorias div{
     float: left;
     width: 32%;
     border: 1px solid #CEDCEA;
     padding: 5px;
 }
 
-.header {
-    color: black;
+.categorias button{
+    background-color: #31373d;
+    color: white;
+    width: 120px;
+    height: 30px;
+    border-style: hidden;
+}
+
+.categorias button:hover{
+    border-style: solid;
+    border-color: #31373d;
+    background-color: white;
+    color: #31373d; 
+}
+button:focus{
+    outline:0;
 }
