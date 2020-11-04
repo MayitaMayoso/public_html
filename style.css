@@ -1,0 +1,152 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    --main-color: rgb(170, 124, 40);
+    --first-shade: #99d1ccff;
+    --second-shade: rgb(192, 193, 199);
+    --third-shade: #22323bff;
+    --animation-in-duration: .6s;
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    background: var(--second-shade);
+    color: var(--main-color);
+}
+
+
+/* --------------- NAV --------------- */
+
+nav {
+    background-color: #31373d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4vw;
+}
+
+.logo {    
+    vertical-align: middle;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    text-align: center;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {    
+    color: var(--main-color);
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    transition: all .1s ease-out;
+}
+
+.nav-links li a:hover { transform: scale(1.1); }
+
+.carrito {
+    padding-left: 9vw;
+    padding-right: 3vw;
+    width: 15vw;
+    height: 3vw;
+}
+
+/* --------------- CONTENT --------------- */
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item {
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: calc(100vw/3);
+    height: 90vh;
+    background-size: auto 100%;
+}
+
+.pantalones {
+    background-image: url("resources/pantalons.jpg");
+}
+
+.zapatillas {
+    background-image: url("resources/sabates.jpg");
+}
+
+.camisetas {
+    background-image: url("resources/samarretes.jpg");
+}
+
+.item div {
+    background-color: rgb(255, 255, 255);
+    color: rgb(202, 202, 202);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    font-size: 6vw;
+    opacity: 0%;
+    vertical-align: center;
+    text-align: center;
+    padding-top: 40%;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.item div:hover {
+    opacity: 90%;
+}
+
+/*
+
+.content h1 {
+    color: #31373d;
+    text-align: center;
+    font-size: 40px;
+}
+
+.content div {
+    float: left;
+    width: 32%;
+    border: 1px solid #CEDCEA;
+    padding: 5px;
+}
+
+.content button {
+    background-color: #31373d;
+    color: white;
+    width: 120px;
+    height: 30px;
+    border-style: hidden;
+}
+
+.content button:hover {
+    border-style: solid;
+    border-color: #31373d;
+    background-color: white;
+    color: #31373d; 
+}
+
+button:focus {
+    outline:0;
+}
+
+*/
