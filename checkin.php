@@ -1,13 +1,10 @@
 <head>
-	<meta charset="UTF-8" />
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
-	<script src="javascript/ajax.js"></script>
-	<script src="javascript/jquery-3.5.1.min.js"></script>
 	<title>Tiender</title>
 </head>
 <body>
 	<nav>
-		<a href="index.html"><img class="logo" src="resources/logo1.png" /></a>
+		<a href="index.php"><img class="logo" src="resources/logo1.png" /></a>
 
 		<div class="nav-space"></div>
 
@@ -22,7 +19,7 @@
 	</nav>
 	
 	<div class="registre">
-	    <?php include_once __DIR__.'/controller/c_checkin.php';?>
+	    <?php include_once __DIR__.'/controlador/c_checkin.php';?>
 	</div>
 </body>
 </html>

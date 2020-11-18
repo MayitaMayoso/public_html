@@ -26,3 +26,5 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
 }else
 {require __DIR__.'/../view/v_checkin.php';}
 
+?>
+
