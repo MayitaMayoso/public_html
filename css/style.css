@@ -84,7 +84,7 @@ nav {
     height: 92vh;
     background-size: auto 100%;
     transition: all 0.3s ease-out;
-    background-image: url("resources/productos/pantalones1.jpg");
+    background-image: url("../resources/productos/pantalones1.jpg");
 }
 
 .item:hover {
