@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/../model/connectaDB.php';
+require_once __DIR__ . '/../model/connectaBD.php';
 require_once __DIR__ . '/../model/m_categories.php';
 require_once __DIR__ . '/../model/m_productes.php';
 $connexio = connectaDB();
