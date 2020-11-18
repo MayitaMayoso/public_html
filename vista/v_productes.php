@@ -1,6 +1,3 @@
-<h1>
-        Hello world
-</h1>
 <ul>
         <?php foreach ($resultat_productes as $prod):?>
                 <li>
