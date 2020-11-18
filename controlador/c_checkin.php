@@ -12,8 +12,8 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
     if (empty($data['NAME']) ||
         empty($data['MAIL']) ||
         empty($data['PASSWORD']) ||
-        empty($data['ADDRESS']) {
-        echo('Rellena todos los campos ');}
+        empty($data['ADDRESS'])
+        echo('Rellena todos los campos ');
     else {
         $connexio = connectaBD();
         if(registre($name, $mail, $password, $address))
