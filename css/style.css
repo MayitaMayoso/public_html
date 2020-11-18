@@ -95,6 +95,9 @@ nav {
 .Calzado {
     background-image: url("../resources/sabates.jpg");
 }
+.Complementos {
+    background-image: url("../resources/Complementos.jpg");
+}
 
 .item:hover {
     --item-zoom: 10%;
