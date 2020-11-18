@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__.'/../model/connecta.php';
+require_once __DIR__.'/../model/connectaBD.php';
 require_once __DIR__.'/../model/m_users.php';
 
 
