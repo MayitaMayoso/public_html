@@ -1,9 +1,9 @@
 <?php
 // index.php
 
-$accio = $_GET['accio'];
+$action = $_GET['action'];
 
-switch ($accio) {
+switch ($action) {
 	case 'productes':
 		include __DIR__.'/resource_productes.php';
 		break;
