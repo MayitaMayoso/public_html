@@ -6,6 +6,6 @@
 	$id=$_GET['product'];
 	$resultat_producte=getProducte($id,$connexio);
 
-	require_once __DIR__.'/../view/v_product.php';
+	require_once __DIR__.'/../vista/v_product.php';
 ?>
 
