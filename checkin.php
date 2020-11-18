@@ -1,5 +1,9 @@
 <head>
-    <title>Tiender</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script src="javascript/ajax.js"></script>
+	<script src="javascript/jquery-3.5.1.min.js"></script>
+	<title>Tiender</title>
 </head>
 <body>
 	<nav>
@@ -18,7 +22,7 @@
 	</nav>
 	
 	<div class="registre">
-	    <?php include_once __DIR__.'/controller/c_sign.php';?>
+	    <?php include_once __DIR__.'/controller/c_register.php';?>
 	</div>
 </body>
 </html>

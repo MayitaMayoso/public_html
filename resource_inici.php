@@ -6,13 +6,13 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<script src="javascript/ajax.js"></script>
 	<script src="javascript/jquery-3.5.1.min.js"></script>
-	<title>Tiender - </title>
+	<title>Tiender</title>
 </head>
 
 <body>
 
 	<nav>
-		<a href="index.html"><img class="logo" src="resources/logo1.png" /></a>
+		<a href="index.php"><img class="logo" src="resources/logo1.png" /></a>
 
 		<div class="nav-space"></div>
 
