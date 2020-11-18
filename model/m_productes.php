@@ -18,7 +18,7 @@ function getCategoria($categoria,$connexio)
 function getProduct($categoria,$connexio)
 {
     try {
-        $consulta_product= $connexio->prepare("SELECT * from PRODUCTES where ID=".$categoria);
+        $consulta_product= $connexio->prepare("SELECT * from PRODUCTS where CATEGORY_ID=".$categoria);
         $consulta_product->execute();
         $resultat_productes = $consulta_product->fetchAll(PDO::FETCH_ASSOC);
     } catch
