@@ -103,6 +103,7 @@ nav {
 }
 
 .item div h3 {
+    writing-mode: vertical-lr;
     color: rgb(172, 171, 171);
     position: absolute;
     top: 50%;
