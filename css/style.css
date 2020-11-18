@@ -160,7 +160,12 @@ nav {
     color: white;
 }
 
-.producto button {
+.categorias div {
+    text-align: center;
+    
+}
+
+.categorias button {
     color: black;
     background-color: white;
     height: 50px;
@@ -170,7 +175,7 @@ nav {
     font-size: 19px;
 }
 
-.producto button:hover{
+.categoriasa button:hover{
     background-color: black;
     color: white;
 }

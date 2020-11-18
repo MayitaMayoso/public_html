@@ -1,9 +1,11 @@
-
+<br>
+<br>
 <?php foreach ($resultat_categories as $categoria): ?>
-	<li>
+	<div class=categories>
 		<h3><?php echo $categoria['NAME'] ?></h3>
+		<br>
 		<a href="/index.php?&cat=<?php echo$categoria['ID']?>">
         	<button class="Boton" id=<?php echo$categoria['ID']?>>Ver más</button>
         </a>
-    </li>
+    </div>
 <?php endforeach; ?>
