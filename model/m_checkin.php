@@ -4,7 +4,7 @@ function registre($name, $mail, $hash, $address)
     try {
         $consulta_registre = $connexio->prepare(
         "INSERT INTO CUSTOMERS (NAME, MAIL, PASSWORD, ADDRESS) 
-        VALUES (:nom, :mail, :hash, :address)");
+        VALUES (':nom', ':mail', ':hash', ':address')");
 
         $consulta_registre->bindValue(':mail', $email);
         $consulta_registre->bindValue(':hash', $hash);
