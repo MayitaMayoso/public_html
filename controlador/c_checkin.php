@@ -23,7 +23,6 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
             require __DIR__.'/../view/v_checkin.php';
         }
 
-
 }else
 {require __DIR__.'/../view/v_checkin.php';}
 
