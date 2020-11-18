@@ -18,4 +18,4 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
 }
 
 
-require __DIR__.'/../view/v_login.php';
+require __DIR__.'/../vista/v_login.php';
