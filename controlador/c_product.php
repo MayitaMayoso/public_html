@@ -1,5 +1,5 @@
 <?php
-	require_once __DIR__ . '/../model/connectaDB.php';
+	require_once __DIR__ . '/../model/connectaBD.php';
 	require_once __DIR__.'/../model/m_product.php';
 
 	$connexio = connectaBD();

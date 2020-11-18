@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/connectaDB.php';
+require_once __DIR__ . '/connectaBD.php';
 
 function getCategoria($categoria,$connexio)
 {
