@@ -84,6 +84,7 @@ nav {
     height: 92vh;
     background-size: auto 100%;
     transition: all 0.3s ease-out;
+    background-image: url("../resources/pantalons.jpg");
 }
 
 .item:hover {
@@ -91,18 +92,6 @@ nav {
     background-size: auto calc(100% + var(--item-zoom));
     background-position-x: var(--item-zoom);
     background-position-y: var(--item-zoom);
-}
-
-.pantalones {
-    background-image: url("../resources/pantalons.jpg");
-}
-
-.zapatillas {
-    background-image: url("../resources/sabates.jpg");
-}
-
-.camisetas {
-    background-image: url("../resources/samarretes.jpg");
 }
 
 .item div {
