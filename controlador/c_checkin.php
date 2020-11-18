@@ -17,13 +17,13 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
     else {
         $connexio = connectaBD();
         if(registre($name, $mail, $password, $address))
-            require __DIR__.'/../view/v_checkin.php';
+            require __DIR__.'/../vista/v_checkin.php';
         else
-            require __DIR__.'/../view/v_checkin.php';
+            require __DIR__.'/../vista/v_checkin.php';
         }
 
 }else
-{require __DIR__.'/../view/v_checkin.php';}
+{require __DIR__.'/../vista/v_checkin.php';}
 
 ?>
 
