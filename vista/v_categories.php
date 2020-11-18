@@ -1,5 +1,5 @@
 <?php foreach ($resultat_categories as $categoria): ?>
-	<a class="link" href="/index.php?action=productes&cat=<?php echo$categoria['ID']?>" class="item <?php echo$categoria['NAME']?>">
+	<a href="/index.php?action=productes&cat=<?php echo$categoria['ID']?>" class="item <?php echo$categoria['NAME']?> "id="link">
 			<div><h3><?php echo $categoria['NAME'] ?></h3></div>
 	</a>
 <?php endforeach; ?>
