@@ -10,7 +10,7 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
     $hash = password_hash($password, PASSWORD_DEFAULT);
 
     $connexio = connectaBD();
-    if(registre($name, $mail, $hash, $address)) {
+    if(registre($name, $mail, $hash, $address, $connexio)) {
         require __DIR__.'/../vista/v_checkindata.php';
     } else {
         require __DIR__.'/../vista/v_checkin.php';
