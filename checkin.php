@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html>
-
 <head>
-	<meta charset="UTF-8" />
-	<link rel="stylesheet" type="text/css" href="css/style.css"/>
-	<script src="js/ajax_JS.js"></script>
-	<title>Tiender - </title>
+    <title>Tiender</title>
 </head>
-
 <body>
-
 	<nav>
 		<a href="index.html"><img class="logo" src="resources/logo1.png" /></a>
 
@@ -24,17 +16,9 @@
 			<li><a href=""><img class="carrito" src="resources/carrito.svg" /></a></li>
 		</ul>
 	</nav>
-
-	<div class="content">
-		<?php require __DIR__.'/controlador/llistar_categories.php'; ?>
+	
+	<div class="registre">
+	    <?php include_once __DIR__.'/controller/c_sign.php';?>
 	</div>
-
 </body>
-
 </html>
-
-
-
-
-
-
