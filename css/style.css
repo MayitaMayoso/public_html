@@ -94,15 +94,15 @@ nav {
 }
 
 .pantalones {
-    background-image: url("resources/pantalons.jpg");
+    background-image: url("../resources/pantalons.jpg");
 }
 
 .zapatillas {
-    background-image: url("resources/sabates.jpg");
+    background-image: url("../resources/sabates.jpg");
 }
 
 .camisetas {
-    background-image: url("resources/samarretes.jpg");
+    background-image: url("../resources/samarretes.jpg");
 }
 
 .item div {
@@ -126,4 +126,74 @@ nav {
 
 .item div:hover {
     opacity: 60%;
+}
+
+.productos {
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+.productos img {
+    width: 300px;
+}
+
+.productos div {
+    float: left;
+    width: 33%;
+}
+.productos img:hover{
+    opacity: 60%;
+}
+
+.productos button {
+    color: black;
+    background-color: white;
+    height: 40px;
+    width: 100px;
+    border-style: solid;
+    border-color: black; 
+}
+
+.productos button:hover{
+    background-color: black;
+    color: white;
+}
+
+.producto button {
+    color: black;
+    background-color: white;
+    height: 50px;
+    width: 200px;
+    border-style: solid;
+    border-color: black; 
+    font-size: 19px;
+}
+
+.producto button:hover{
+    background-color: black;
+    color: white;
+}
+
+.producto div {
+    float: left;
+    width: 50%;
+}
+
+.producto img {
+    width: 700px;
+}
+
+.precio {
+    color: gray;
+    font-size: 25px;
+    font-weight: bold;
+}
+.producto h3 {
+    font-size: 50px;
+}
+
+.producto #info {
+    margin-top: 150px;
+    margin-left: 50px;
 }
