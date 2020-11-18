@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__.'/../model/connectaBD.php';
-require_once __DIR__.'/../model/m_registre.php';
+require_once __DIR__.'/../model/m_checkin.php';
 
 if($_SERVER['REQUEST_METHOD']=='POST') {
     $name = $_POST['NAME'];
@@ -18,12 +18,12 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
     else {
         $connexio = connectaBD();
         if(registre($name, $mail, $password, $address))
-            require __DIR__.'/../view/v_registre.php';
+            require __DIR__.'/../view/v_checkin.php';
         else
-            require __DIR__.'/../view/v_registre.php';
+            require __DIR__.'/../view/v_checkin.php';
         }
 
 
 }else
-{require __DIR__.'/../view/v_registre.php';}
+{require __DIR__.'/../view/v_checkin.php';}
 

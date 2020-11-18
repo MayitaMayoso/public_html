@@ -12,7 +12,7 @@
 		<div class="nav-space"></div>
 
 		<ul class="nav-links">
-			<li><a href="index.html">Inicio</a></li>
+			<li><a href="index.php">Inicio</a></li>
 			<li><div></div></li>
 			<li><div></div></li>
 			<li><a href="http://tdiw-e13.deic-docencia.uab.cat/?action=checkin" target="_self">Check-in</a></li>
@@ -22,7 +22,7 @@
 	</nav>
 	
 	<div class="registre">
-	    <?php include_once __DIR__.'/controller/c_register.php';?>
+	    <?php include_once __DIR__.'/controller/c_checkin.php';?>
 	</div>
 </body>
 </html>
