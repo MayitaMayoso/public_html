@@ -1,9 +1,10 @@
 <?php
-function registre($name, $mail, $password, $address)
+function registre($name, $mail, $hash, $address)
 {
     try {
-        $consulta_registre = $connexio->prepare("INSERT INTO `CUSTOMERS` (`NAME`, `MAIL`, `PASSWORD`, `ADDRESS`) 
-VALUES (NULL, :email, NULL, :nom, :hash, :username, :poble, :CP, :adreca, :cognoms)");
+        $consulta_registre = $connexio->prepare(
+        "INSERT INTO CUSTOMERS (NAME, MAIL, PASSWORD, ADDRESS) 
+        VALUES (:nom, :mail, :hash, :address)");
 
         $consulta_registre->bindValue(':mail', $email);
         $consulta_registre->bindValue(':hash', $hash);

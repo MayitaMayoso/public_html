@@ -16,7 +16,7 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
         echo('Rellena todos los campos ');}
     else {
         $connexio = connectaBD();
-        if(registre($name, $mail, $password, $address))
+        if(registre($name, $mail, $hash, $address))
             require __DIR__.'/../vista/v_checkindata.php';
         else
             require __DIR__.'/../vista/v_checkin.php';
