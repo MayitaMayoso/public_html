@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/connectaBD.php';
+require_once __DIR__ . '/connection.php';
 function getProducte($id,$connexio){
     try {
         $consulta_producte = $connexio->prepare("SELECT * from PRODUCTS where ID=".$id);

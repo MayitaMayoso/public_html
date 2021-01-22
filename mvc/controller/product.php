@@ -1,11 +1,11 @@
 <?php
-	require_once __DIR__ . '/../model/connectaBD.php';
-	require_once __DIR__.'/../model/m_product.php';
+	require_once __DIR__ . '/../model/connection.php';
+	require_once __DIR__.'/../model/product.php';
 
-	$connexio = connectaBD();
+	$connexio = connect();
 	$id=$_GET['product'];
 	$resultat_producte=getProducte($id,$connexio);
 
-	require_once __DIR__.'/../vista/v_product.php';
+	require_once __DIR__.'/../view/product.php';
 ?>
 

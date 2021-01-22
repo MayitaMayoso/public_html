@@ -1,6 +1,6 @@
 <?php
-require_once __DIR__.'/../model/connectaBD.php';
-require_once __DIR__.'/../model/m_checkin.php';
+require_once __DIR__.'/../model/connection.php';
+require_once __DIR__.'/../model/checkin.php';
 
 if($_SERVER['REQUEST_METHOD']=='POST') {
     $name = $_POST['name'];
@@ -9,11 +9,11 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
     $address = $_POST['address'];
     $hash = password_hash($password, PASSWORD_DEFAULT);
 
-    $connexio = connectaBD();
+    $connexio = connect();
     registre($name, $mail, $hash, $address, $connexio);
-    require __DIR__.'/../vista/v_checkindata.php';
+    require __DIR__.'/../view/checkindata.php';
 } else {
-    require __DIR__.'/../vista/v_checkin.php';
+    require __DIR__.'/../view/checkin.php';
 }
 
 ?>

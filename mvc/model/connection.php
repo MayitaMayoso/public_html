@@ -1,5 +1,5 @@
 <?php
-function connectaBD()
+function connect()
 {
     try{
         $connexio=new PDO(
