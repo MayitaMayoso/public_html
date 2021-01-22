@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/connection.php';
-function getproduct($id,$connexio){
+function getProduct($id,$connexio){
     try {
         $consulta_product = $connexio->prepare("SELECT * from PRODUCTS where ID=".$id);
         $consulta_product->execute();
