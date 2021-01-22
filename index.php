@@ -11,7 +11,7 @@
 <body>
 	<!-- NAVIGATOR OF THE PAGE, IF THE USER IS LOGGED IN IT WILL CHANGE -->
 	<nav>
-		<?php require __DIR__.'/controller/navigator.php'; ?>
+		<?php require __DIR__.'/mvc/controller/navigator.php'; ?>
 	</nav>
 
 	<!-- MAIN CONTENT OF THE PAGE -->
@@ -21,20 +21,20 @@
 				$action = $_GET['action'];
 				switch ($action) {
 					case 'productes':
-						include __DIR__.'/controller/productes.php';
+						include __DIR__.'/mvc/controller/productes.php';
 						break;
 					case 'product':
-						include __DIR__.'/controller/product.php';
+						include __DIR__.'/mvc/controller/product.php';
 						break;
 					case 'checkin':
-						include __DIR__.'/controller/checkin.php';
+						include __DIR__.'/mvc/controller/checkin.php';
 						break;
 					case 'login':
-						include __DIR__.'/controller/login.php';
+						include __DIR__.'/mvc/controller/login.php';
 						break;
 				}
 			} else {
-				include __DIR__.'/controller/categories.php';
+				include __DIR__.'/mvc/controller/categories.php';
 			}
 		?>
 	</div>
