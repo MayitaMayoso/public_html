@@ -1,8 +1,11 @@
 $(document).ready(
     function() {
-        $('#category-link').click(
+        var trigger = $("#category-link");
+        var container = $("#content");
+
+        trigger.on("click",
             function() {
-                $('#content').load('content.php?action=products&cat=1');
+                container.Load("content.php?action=products?cat=1");
             }
         );
     }    
