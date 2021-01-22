@@ -5,7 +5,8 @@ $(document).ready(
 
         trigger.on("click",
             function() {
-                container.Load("content.php?action=products?cat=1");
+                var cat = $this.data("target");
+                container.Load("content.php?action=products?cat=" + cat);
             }
         );
     }    
