@@ -7,6 +7,8 @@ $(document).ready(
             function() {
                 var cat = $this.data("target");
                 container.Load("content.php?action=products?cat=" + cat);
+
+                return false;
             }
         );
     }    
