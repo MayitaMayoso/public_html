@@ -4,11 +4,11 @@
 </head>
 <body>
 	<nav>		
-		<?php require __DIR__.'/resource_navigator.php'; ?>
+		<?php require __DIR__.'/navigator.php'; ?>
 	</nav>
 	
 	<div class="registre">
-	    <?php include_once __DIR__.'/controlador/c_checkin.php';?>
+	    <?php include_once __DIR__.'../controller/checkin.php';?>
 	</div>
 </body>
 </html>
