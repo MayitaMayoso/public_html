@@ -4,8 +4,8 @@
 <head>
 	<meta charset="UTF-8" />
 	<link rel="stylesheet" type="text/css" href="/css/style.css"/>
-	<script src="/javascript/jquery-3.5.1.min.js"></script>
-	<script src="/javascript/asynchronousLoad.js"></script>
+	<script src="public_html/javascript/jquery-3.5.1.min.js"></script>
+	<script src="public_html/javascript/asynchronousLoad.js"></script>
 	<title>Tiender</title>
 </head>
 
