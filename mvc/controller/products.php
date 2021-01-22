@@ -7,7 +7,7 @@ $connexio = connect();
 $categoria=$_GET['cat'];
 
 $resultat_categoria = getCategoria($categoria,$connexio);
-$resultat_productes = getProduct($categoria,$connexio);
+$resultat_products = getProduct($categoria,$connexio);
 
 include_once __DIR__ . '/../view/products.php';
 

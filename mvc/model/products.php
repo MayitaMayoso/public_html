@@ -20,12 +20,12 @@ function getProduct($categoria,$connexio)
     try {
         $consulta_product= $connexio->prepare("SELECT * from PRODUCTS where CATEGORY_ID=".$categoria);
         $consulta_product->execute();
-        $resultat_productes = $consulta_product->fetchAll(PDO::FETCH_ASSOC);
+        $resultat_products = $consulta_product->fetchAll(PDO::FETCH_ASSOC);
     } catch
     (PDOException $e) {
         echo "Error: " . $e->getMessage();
     }
 
-    return ($resultat_productes);
+    return ($resultat_products);
 }
 ?>

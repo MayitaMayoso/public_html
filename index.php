@@ -20,8 +20,8 @@
 			if ( isset($_GET['action']) ) {
 				$action = $_GET['action'];
 				switch ($action) {
-					case 'productes':
-						include __DIR__.'/mvc/controller/productes.php';
+					case 'products':
+						include __DIR__.'/mvc/controller/products.php';
 						break;
 					case 'product':
 						include __DIR__.'/mvc/controller/product.php';
