@@ -7,7 +7,7 @@ $(document).ready(
         trigger.on("click",
             function() {
                 var cat = $(this).data("target");
-                container.load("content.php?action=products?cat=" + cat);
+                container.load("prueba.php");
 
                 console.log("Joderrrrrrrr2");
 
