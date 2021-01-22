@@ -12,6 +12,7 @@ $(document).ready(
 
         $("#product-link").on("click",
             function() {
+                console.log("penen");
                 var prod = $(this).data("target");
                 container.load("content.php?action=product&product=" + prod);
 
