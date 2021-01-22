@@ -11,7 +11,7 @@
 
 <body>
 	<!-- NAVIGATOR OF THE PAGE, IF THE USER IS LOGGED IN IT WILL CHANGE -->
-	<?php echo BASE_URL?>
+	<?php echo __DIR__?>
 	<nav>
 		<?php require __DIR__.'/mvc/controller/navigator.php'; ?>
 	</nav>
