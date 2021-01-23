@@ -26,7 +26,7 @@ $(document).ready(
     <li><a href="http://tdiw-e13.deic-docencia.uab.cat/">Inicio</a></li>
     <li><a id="checkin-link" href="#" target="_self">Check-in</a></li>
     <li><a id="login-link" href="#" target="_self">Log-in</a></li>
-    <li ><a href=""><img class="usuario" src="resources/usuario.svg" /></a></li>
+    <li><a href=""><img class="usuario" src="resources/usuario.svg" /></a></li>
     <div class="dropdown-content">
         <a href="./../index.php?action=cuenta">Mi cuenta</a>
         <a href="./../index.php?action=pedidos">Mis pedidos</a>
