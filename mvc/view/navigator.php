@@ -27,7 +27,7 @@ $(document).ready(
     <li><a id="checkin-link" href="#" target="_self">Check-in</a></li>
     <li><a id="login-link" href="#" target="_self">Log-in</a></li>
     <li><a href=""><img class="usuario" src="resources/usuario.svg" /></a></li>
-    <div class="dropdown-content">
+    <div class="">
         <a href="./../index.php?action=cuenta">Mi cuenta</a>
         <a href="./../index.php?action=pedidos">Mis pedidos</a>
         <a href="./../index.php?action=logout">Cerrar sesión</a>
