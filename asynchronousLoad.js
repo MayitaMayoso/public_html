@@ -2,7 +2,7 @@ $(document).ready(
     function() {
         var container = $("#content");
 
-        $(".category-link").on("click",
+        $("#categories-link a").on("click",
             function() {
                 var cat = $(this).data("target");
                 container.load("content.php?action=products&cat=" + cat);
@@ -11,7 +11,7 @@ $(document).ready(
             }
         );
         
-        $(".product-link").on("click",
+        $("#product-link a").on("click",
             function() {
                 var prod = $(this).data("target");
                 container.load("content.php?action=product&product=" + prod);
