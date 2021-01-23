@@ -76,7 +76,7 @@ nav {
     justify-content: space-evenly;
 }
 
-#categories-link.item {
+.item {
     position: relative;
     text-align: center;
     text-decoration: none;
