@@ -12,9 +12,8 @@ function login(string $mail,string $password)
             ]
         );
         $result = $conec->fetch(PDO::FETCH_ASSOC);
+        return password_verify($password, $result['password']) ? result : null;
 
     }catch(PDOException $e){echo 'Error :' .$e->getMessage();}
-     return $result !== false ? $result : [];
 
-     return password_verify($password, $result['password']) ? result : null;
 }
