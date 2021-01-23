@@ -1,6 +1,7 @@
-<ul>
-        <?php foreach ($resultat_products as $prod):?><li><p>
-                <a class="link" id="product-link" href="#" target-data=<?php echo $prod['ID']?>>
-                <?php echo $prod['NAME']?></a>
-        </p></li><?php endforeach; ?>
-</ul>
+<div id="products-link">
+<?php foreach ($resultat_products as $prod):?><li><p>
+        <a class="item <?php echo $prod['NAME']?>" href="#" target-data=<?php echo $prod['ID']?>>
+                <?php echo $prod['NAME']?>
+        </a>
+<?php endforeach; ?>
+</div>
