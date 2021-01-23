@@ -76,6 +76,11 @@ nav {
     justify-content: space-evenly;
 }
 
+#products-link {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .item {
     position: relative;
     text-align: center;
