@@ -9,6 +9,7 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
     $password=$_POST['PASSWORD'];
     $password = htmlentities($password, ENT_QUOTES | ENT_HTML5, 'UTF-8');
 
+    $user = login($mail, $password);
     if ($user) {
     	$_SESSION['ID'] = $user['ID'];
     	echo "te has logueado";
