@@ -8,15 +8,9 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
     $password = $_POST['password'];
     $address = $_POST['address'];
     $hash = password_hash($password, PASSWORD_DEFAULT);
-    echo "linea 11";
     $connexio = connect();
     if (registre($name, $mail, $hash, $address, $connexio)) {
     	require __DIR__.'/../view/checkindata.php';
-    	echo "registre";
-    }
-    else {
-    	echo "no va";
-    }
 
 } else {
     require __DIR__.'/../view/checkin.php';
