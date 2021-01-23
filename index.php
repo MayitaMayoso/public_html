@@ -10,6 +10,12 @@
 
 <body>
 	<!-- NAVIGATOR OF THE PAGE, IF THE USER IS LOGGED IN IT WILL CHANGE -->
+	<?php
+	switch ($action) {
+		case 'checkin':
+	        require __DIR__ . '/resource_reg.php';
+	        break;
+    }?>
 	<nav>
 		<?php require __DIR__.'/mvc/controller/navigator.php'; ?>
 	</nav>
