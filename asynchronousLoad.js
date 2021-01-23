@@ -1,6 +1,7 @@
 $(document).ready(
     function() {
         var container = $("#content");
+        console.log("hola mundo");
 
         $("#product-link").on("click",
             function() {
