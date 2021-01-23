@@ -14,10 +14,10 @@
 	$action=$_GET['action'] ?? null;
 	switch ($action) {
 		case 'checkin':
-	        require __DIR__ . '/mvc/controller/checkin.php';
+	        require __DIR__. '/mvc/controller/checkin.php';
 	        break;
 	    case 'login'
-	    	require __DIR__ . 'mvc/controller/login.php';
+	    	require __DIR__. '/mvc/controller/login.php';
 	    	break;
     } ?>
 	<nav>
