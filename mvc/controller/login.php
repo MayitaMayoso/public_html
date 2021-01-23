@@ -25,6 +25,7 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
     }
     #return;
 }
+}
 else {
 	require __DIR__.'/../view/login.php';
 }
