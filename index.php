@@ -17,7 +17,7 @@
 
 	<!-- MAIN CONTENT OF THE PAGE -->
 	<div class="content" id="content">		
-		<?php require __DIR__.'content.php?action=products&cat=1'; ?>
+		<?php require __DIR__.'/mvc/controller/categories.php'; ?>
 	</div>
 </body>
 
