@@ -59,7 +59,7 @@ nav {
 
 .nav-links li a:hover { transform: scale(1.1); }
 
-.carrito {
+.carrito,.usuario {
     width: auto;
     height: 2vw;
     transition: all .4s ease-in-out;
