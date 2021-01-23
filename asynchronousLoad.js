@@ -11,7 +11,7 @@ $(document).ready(
             }
         );
         
-        $("#product-link a").on("click",
+        $("#products-link a").on("click",
             function() {
                 var prod = $(this).data("target");
                 container.load("content.php?action=product&product=" + prod);
