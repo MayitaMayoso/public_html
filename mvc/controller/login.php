@@ -22,6 +22,8 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
     }
     else {
     	echo "error de login";
+    	var_dump($mail);
+    	var_dump($password);
     }
     #return;
 }
