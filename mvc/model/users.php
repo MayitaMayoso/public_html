@@ -4,7 +4,6 @@ function login(string $mail,string $password)
     try {
         $connexio=connect();
         $bd = 'SELECT * FROM CUSTOMER where MAIL=:MAIL LIMIT:1';
-        var_dump($mail);
         $conec = $connexio->prepare($bd);
         $conec->execute(
             [
