@@ -10,13 +10,10 @@ $(document).ready(
                 return false;
             }
         );
-        
+
         $("#products-link a").on("click",
             function() {
-                console.log("hola");
-                var prod = $(this).data("target");
-                container.load("content.php?action=product&product=" + prod);
-
+                console.log("Hola");
                 return false;
             }
         );
