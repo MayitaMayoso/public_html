@@ -2,19 +2,17 @@ $(document).ready(
     function() {
         var container = $("#content");
 
-        $("#category-link").on("click",
+        $("category-link").on("click",
             function() {
                 var cat = $(this).data("target");
-                console.log("penen" + cat);
-                container.load("content.php?action=products&cat=" + "2");
+                container.load("content.php?action=products&cat=" + cat);
 
                 return false;
             }
         );
         
-        $("#product-link").on("click",
+        $("product-link").on("click",
             function() {
-                console.log("penen");
                 var prod = $(this).data("target");
                 container.load("content.php?action=product&product=" + prod);
 
