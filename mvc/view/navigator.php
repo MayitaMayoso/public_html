@@ -10,7 +10,7 @@ $(document).ready(
                 
                 $("#login-link").on("click",
 					function() {
-						$("#content").load("content.php?action=checkin");
+						$("#content").load("content.php?action=login");
 						return false;
 					}
         		);
