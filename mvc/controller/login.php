@@ -4,16 +4,10 @@ require_once __DIR__.'/../model/users.php';
 
 
 if($_SERVER['REQUEST_METHOD']=='POST') {
-    $filters = filter_input_array(
-        INPUT_POST, [
-            'MAIL' => FILTER_DEFAULT,
-            'PASSWORD' => FILTER_DEFAULT,
-        ]
-    );
-
-    $mail = $filters['MAIL'];
-    $password = $filters['PASSWORD'];
-    $user = login($mail, $password);
+    $email=$_POST['email'];
+    $is_email=filter_var($email,FILTER_VALIDATE_EMAIL)!==false;
+    $password=$_POST['PSW'];
+    $password = htmlentities($password, ENT_QUOTES | ENT_HTML5, 'UTF-8');
 
     if ($user) {
     	$_SESSION['ID'] = $user['ID'];
