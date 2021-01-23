@@ -15,7 +15,7 @@
 		case 'checkin':
 	        require __DIR__ . '/resource_reg.php';
 	        break;
-    }?>
+    } ?>
 	<nav>
 		<?php require __DIR__.'/mvc/controller/navigator.php'; ?>
 	</nav>
