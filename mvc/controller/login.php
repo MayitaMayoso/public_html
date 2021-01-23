@@ -16,10 +16,12 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
     $password = $filters['PASSWORD'];
     $user = login($mail, $password);
     if ($user) {
+    	var_dump($user);
     	$_SESSION['ID'] = $user['ID'];
     	echo "te has logueado";
     }
     else {
+    	var_dump($user);
     	echo "error de login";
     	__DIR__.'/../view/login.php';
     }
