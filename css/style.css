@@ -59,10 +59,15 @@ nav {
 
 .nav-links li a:hover { transform: scale(1.1); }
 
-.carrito,.usuario {
+.carrito{
     width: auto;
     height: 2vw;
     transition: all .4s ease-in-out;
+}
+.usuario{
+    width: auto;
+    height: 2vw;
+    color: var(--main-color);
 }
 
 .carrito:hover {
