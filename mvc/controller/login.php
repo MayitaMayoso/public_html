@@ -4,9 +4,9 @@ require_once __DIR__.'/../model/users.php';
 
 
 if($_SERVER['REQUEST_METHOD']=='POST') {
-    $email=$_POST['email'];
-    $is_email=filter_var($email,FILTER_VALIDATE_EMAIL)!==false;
-    $password=$_POST['PSW'];
+    $mail=$_POST['MAIL'];
+    $is_email=filter_var($mail,FILTER_VALIDATE_EMAIL)!==false;
+    $password=$_POST['PASSWORD'];
     $password = htmlentities($password, ENT_QUOTES | ENT_HTML5, 'UTF-8');
 
     if ($user) {
