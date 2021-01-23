@@ -1,21 +1,15 @@
 <?php
-function login(string $mail,string $password)
+
+function user($connexio,$id)
 {
     try {
-        $connexio=connect();
-        $bd = 'SELECT * FROM CUSTOMER where MAIL=:MAIL LIMIT 1';
-        $conec = $connexio->prepare($bd);
-        $conec->execute(
-            [
-                'MAIL' => $mail,
-                #'PASSWORD' => $password,
-            ]
-        );
-        $result = $conec->fetch(PDO::FETCH_ASSOC);
-        if ($result == false)
-            return null;
-        return password_verify($password,$result['PASSWORD']) ? $result : 0;
-
-    }catch(PDOException $e){echo 'Error :' .$e->getMessage();}
+        $usuari_consulta = $connexio->prepare("SELECT * from Usuari where id=".$id);
+        $usuari_consulta->execute();
+        $resultat_usuari = $usuari_consulta->fetchAll(PDO::FETCH_ASSOC);
+        return $resultat_usuari;
+    } catch
+    (PDOException $e) {
+        echo "Error: " . $e->getMessage();
+    }
 
 }
