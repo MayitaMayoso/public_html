@@ -7,8 +7,8 @@ $(document).ready(
                                 $("#content").load("content.php?action=product&product=" + prod);
 
                                 return false;
-                        }.fadeIn(1000);
-                );
+                        }
+                ).fadeIn(1000);
         }    
 );
 </script>
