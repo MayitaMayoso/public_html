@@ -6,13 +6,13 @@ require_once __DIR__.'/../model/users.php';
 if($_SERVER['REQUEST_METHOD']=='POST') {
     $filters = filter_input_array(
         INPUT_POST, [
-            'mail' => FILTER_DEFAULT,
-            'password' => FILTER_DEFAULT,
+            'MAIL' => FILTER_DEFAULT,
+            'PASSWORD' => FILTER_DEFAULT,
         ]
     );
 
-    $mail = $filters['mail'];
-    $password = $filters['password'];
+    $mail = $filters['MAIL'];
+    $password = $filters['PASSWORD'];
     $user = login($mail, $password);
 
     if ($user) {
