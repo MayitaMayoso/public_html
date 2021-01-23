@@ -11,7 +11,7 @@ function registre($name, $mail, $hash, $address, $connexio) {
         if($consulta_registre->execute()){
             echo "Te has registrado";
         } else {
-            echo"Error";
+            echo"Error 2";
         }
 
     }catch(PDOException $e)
