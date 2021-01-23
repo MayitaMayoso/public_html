@@ -3,7 +3,7 @@ function login(string $mail,string $password)
 {
     try {
         $connexio=connect();
-        $bd = 'SELECT ID, `MAIL` FROM CUSTOMER where MAIL=:MAIL AND PASSWORD=:PASSWORD LIMIT:1';
+        $bd = 'SELECT * FROM CUSTOMER where MAIL=:MAIL AND PASSWORD=:PASSWORD LIMIT:1';
         $conec = $connexio->prepare($bd);
         $conec->execute(
             [
