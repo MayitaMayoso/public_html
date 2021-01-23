@@ -2,7 +2,6 @@ $(document).ready(
     function() {
         var container = $("#content");
 
-
         $("#product-link").on("click",
             function() {
                 console.log("penen");
@@ -15,6 +14,7 @@ $(document).ready(
         $("#category-link").on("click",
             function() {
                 var cat = $(this).data("target");
+                console.log("penen" + cat);
                 container.load("content.php?action=products&cat=" + cat);
 
                 return false;
