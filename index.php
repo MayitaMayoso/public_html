@@ -16,7 +16,7 @@
 		case 'checkin':
 	        require __DIR__. '/mvc/controller/checkin.php';
 	        break;
-	    case 'login'
+	    case 'login':
 	    	require __DIR__. '/mvc/controller/login.php';
 	    	break;
     } ?>
