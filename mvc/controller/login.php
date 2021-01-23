@@ -14,6 +14,13 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
     $mail = $filters['mail'];
     $password = $filters['password'];
     $user = login($mail, $password);
+
+    if ($user) {
+    	$_SESSION['ID'] = $user['ID']
+    	print_r($_SESSION)
+    }
+
+    require __DIR__.'/../view/login_result.php';
     return;
 }
 

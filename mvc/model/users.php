@@ -3,7 +3,7 @@ function login(string $mail,string $password)
 {
     try {
         $connexio=connect();
-        $bd = 'SELECT `mail` FROM CUSTOMER where MAIL=:mail AND PASSWORD=:password LIMIT:1';
+        $bd = 'SELECT id, `mail` FROM CUSTOMER where MAIL=:mail AND PASSWORD=:password LIMIT:1';
         $conec = $connexio->prepare($bd);
         $conec->execute(
             [
@@ -15,4 +15,6 @@ function login(string $mail,string $password)
 
     }catch(PDOException $e){echo 'Error :' .$e->getMessage();}
      return $result !== false ? $result : [];
+
+     return password_verify($password, $result['password']) ? result : null;
 }
