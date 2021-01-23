@@ -17,7 +17,7 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
 
     if ($user) {
     	$_SESSION['ID'] = $user['ID']
-    	print_r($_SESSION)
+    	var_dump($_SESSION)
     }
 
     require __DIR__.'/../view/login_result.php';

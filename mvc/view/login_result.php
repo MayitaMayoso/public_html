@@ -1,2 +1,3 @@
+<?php
 
-login correcte
+echo "Has iniciado sesión";
