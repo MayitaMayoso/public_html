@@ -1,20 +1,25 @@
+
+
 <?php
-function login(string $mail,string $password)
+function login(string $email,string $password)
 {
     try {
-        $connexio=connect();
-        $bd = 'SELECT id, `mail` FROM CUSTOMER where MAIL=:mail AND PASSWORD=:password LIMIT:1';
-        $conec = $connexio->prepare($bd);
+        $connexio=getConn();
+        $sql = 'SELECT * FROM CUSTOMER where MAIL = :email LIMIT 1';
+        $conec = $connexio->prepare($sql);
         $conec->execute(
             [
-                'mail' => $mail,
-                'password' => $password,
+                'email' => $mail,
             ]
         );
         $result = $conec->fetch(PDO::FETCH_ASSOC);
+        if($result===false)
+            return null;
+        echo "hola";
+        return password_verify($password,$result['password']) ? $result : 0;
+
 
     }catch(PDOException $e){echo 'Error :' .$e->getMessage();}
-     return $result !== false ? $result : [];
 
-     return password_verify($password, $result['password']) ? result : null;
+
 }
