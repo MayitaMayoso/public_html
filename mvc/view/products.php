@@ -1,12 +1,10 @@
 <script type="text/javascript">
 $(document).ready(
         function() {
-                var container = $("#content");
-                
                 $("#products-link a").on("click",
                         function() {
                                 var prod = $(this).data("target");
-                                container.load("content.php?action=product&product=" + prod);
+                                $("#content").load("content.php?action=product&product=" + prod);
 
                                 return false;
                         }
