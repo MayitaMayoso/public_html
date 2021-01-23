@@ -11,6 +11,7 @@
 <body>
 	<!-- NAVIGATOR OF THE PAGE, IF THE USER IS LOGGED IN IT WILL CHANGE -->
 	<?php
+	$fotousuario = '/resources/usuarios/';
 	$action=$_GET['action'] ?? null;
 	switch ($action) {
 		case 'checkin':
