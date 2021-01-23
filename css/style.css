@@ -71,7 +71,7 @@ nav {
 
 /* --------------- CONTENT --------------- */
 
-.content {
+#categories-link {
     display: flex;
     justify-content: space-evenly;
 }
