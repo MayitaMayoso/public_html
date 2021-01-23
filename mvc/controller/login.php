@@ -17,12 +17,12 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
 
     if ($user) {
     	$_SESSION['ID'] = $user['ID'];
+    	echo "te has logueado";
     	require __DIR__.'/../view/login_result.php';
     }
-
-    
-    return;
+    else {
+    	echo "error de login";
+    }
+    #return;
 }
-
-
 require __DIR__.'/../view/login.php';
