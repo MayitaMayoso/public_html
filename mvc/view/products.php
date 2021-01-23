@@ -18,10 +18,10 @@ $(document).ready(
 
 <div id="products-link">
 <?php foreach ($resultat_products as $prod):?>
-	<a href="#" class="item" target-data=<?php echo $prod['ID']?>>
+	<a href="#" class="item" data-target=<?php echo $prod['ID']?>>
 		<div>
 			<h3>
-                                <?php echo $prod['ID']?> <?php echo $prod['NAME']?>
+                                <?php echo $prod['NAME']?>
 			</h3>
 		</div>
 
