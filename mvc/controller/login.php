@@ -18,13 +18,13 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
     if ($user) {
     	$_SESSION['ID'] = $user['ID'];
     	echo "te has logueado";
-    	require __DIR__.'/../view/login_result.php';
     }
     else {
     	echo "error de login";
-    	var_dump($mail);
-    	var_dump($password);
+    	__DIR__.'/../view/login.php';
     }
     #return;
 }
-require __DIR__.'/../view/login.php';
+else {
+	require __DIR__.'/../view/login.php';
+}

@@ -3,13 +3,13 @@ function login(string $mail,string $password)
 {
     try {
         $connexio=connect();
-        $bd = 'SELECT * FROM CUSTOMER where MAIL=:MAIL AND PASSWORD=:PASSWORD LIMIT:2';
-        var_dump($bd);
+        $bd = 'SELECT * FROM CUSTOMER where MAIL=:MAIL LIMIT:1';
+        var_dump($mail);
         $conec = $connexio->prepare($bd);
         $conec->execute(
             [
                 'MAIL' => $mail,
-                'PASSWORD' => $password,
+                #'PASSWORD' => $password,
             ]
         );
         $result = $conec->fetch(PDO::FETCH_ASSOC);
