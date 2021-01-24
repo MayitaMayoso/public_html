@@ -49,7 +49,7 @@ function addProduct($product, $order, $connection) {
     try {
         $query = $connection->prepare("INSERT INTO SALES (PRODUCT_ID, ORDER_ID) VALUES (:PRODUCT_ID, :ORDER_ID)");
         $query->bindValue(':PRODUCT_ID', $product);
-        $query->bindValue(':PRODUCT_ID', $order["ID"]);
+        $query->bindValue(':ORDER_ID', $order["ID"]);
         $query->execute();
     }catch(PDOException $e) {
         echo "Error:" .$e->getMessage();
