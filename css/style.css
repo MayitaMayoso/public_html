@@ -85,7 +85,7 @@ nav {
     text-align: center;
 }
 
-#login input {
+#login input,#checkin-form input {
   border: none;
   background: hsl(0 0% 93%);
   border-radius: .25rem;
@@ -94,7 +94,6 @@ nav {
   &[type="submit"] {
     background: hotpink;
     color: white;
-    box-shadow: 0 .75rem .5rem -.5rem hsl(0 50% 80%);
   }
 }
 .cart {
