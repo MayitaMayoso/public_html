@@ -64,6 +64,7 @@ function emptyCart($order, $connection) {
         ");
         $query->bindValue(':ORDER_ID', $order["ID"]);
         $query->execute();
+        echo $order["ID"];
     }catch(PDOException $e) {
         echo "Error:" .$e->getMessage();
     }
