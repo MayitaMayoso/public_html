@@ -13,11 +13,11 @@ $(document).ready(
 				?>
 			}
 		);
-	}    
+	}<
 );
 </script>
 
-<div class=product>
+<div class="product">
 	<h2><?php echo $product['NAME'];?></h2><br>
 	<p class="price"><?php echo $product['PRICE'];?></p>
 	<p><?php echo $product['DESCRIPTION'];?></p><br>
