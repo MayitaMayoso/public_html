@@ -42,7 +42,7 @@ function createOrder($connection) {
 function getProducts($order, $connection) {
     try {
         $query= $connection->prepare("
-            SELECT P.NAME, P.PRICE, COUNT(S.ID) as TOTAL
+            SELECT P.ID, P.NAME, P.PRICE, COUNT(S.ID) as TOTAL
             FROM  ORDERS O, PRODUCTS P, SALES S
             WHERE O.ID = S.ORDER_ID
             and S.PRODUCT_ID = P.ID
