@@ -2,9 +2,9 @@
 $(document).ready(
         function() {
                 $('#name-hover').hover(function() {
-                        $("#menu-hover").fadeIn('slow');
+                        $("#menu-hover").show();
                 }, function(){
-                        $("#menu-hover").fadeOut('slow');
+                        $("#menu-hover").hide();
                 }
                 );
 
