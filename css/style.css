@@ -92,7 +92,7 @@ nav {
   padding: .75rem 1rem;
   
   &[type="submit"] {
-    background: hotpink;
+    background: var(--third-shade);
     color: white;
   }
 }
@@ -130,15 +130,6 @@ nav {
     color: var(--third-shade);
 }
 
-#button-submit{
-    background-color: white;
-    color: black;
-    border-style: solid;
-    border-color: var(--third-shade)
-    width:100px;
-    height:30px;
-    font-size: 15px;
-}
 
 .cart-product button{
     background-color: white;
