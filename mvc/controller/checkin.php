@@ -3,6 +3,7 @@ require_once __DIR__.'/../model/connection.php';
 require_once __DIR__.'/../model/checkin.php';
 
 if($_SERVER['REQUEST_METHOD']=='POST') {
+    console.log("Message here");
     $name = $_POST['name'];
     $mail = $_POST['mail'];
     $password = $_POST['password'];
