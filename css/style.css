@@ -84,26 +84,16 @@ nav {
     align-content: center;
     text-align: center;
 }
-
-#cart {
-    margin: auto;
-    margin-top: 60px;
-    float: center;
-    width: 45%;
-    align-content: center;
-    text-align: center;
-}
-
-.cart h2 {
-    color: red;
+.cart h2{
+    margin-bottom: 30px;
 }
 
 .cart-product button{
     background-color: var(--third-shade);
     color: white;
     border-style: none;
-    width:50px;
-    height:20px;
+    width:60px;
+    height:25px;
     font-size: 15px;
 }
 
