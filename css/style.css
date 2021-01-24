@@ -239,3 +239,9 @@ nav {
     margin-top: 150px;
     margin-left: 50px;
 }
+
+/* ----------------- FOOTER ------------------ */
+#floating-cart {
+    position: fixed;
+    background-color: green;
+}
