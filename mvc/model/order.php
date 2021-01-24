@@ -85,10 +85,10 @@ function deleteItem($product, $order, $connection) {
     try {
         $query = $connection->prepare("
             DELETE FROM SALES 
-            WHERE PRODUCT_ID=:product_id
-            AND ORDER_ID=:order_id
+            WHERE PRODUCT_ID=:PRODUCT_ID
+            AND ORDER_ID=:ORDER_ID
         ");
-        $query->bindValue(':product_id', $product);
+        $query->bindValue(':PRODUCT_ID', $product);
         $query->bindValue(':ORDER_ID', $order["ID"]);
         $query->execute();
     }catch(PDOException $e) {
