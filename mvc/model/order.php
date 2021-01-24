@@ -1,4 +1,20 @@
 <?php
+function getHistory($connection) {
+    try {
+        $query= $connection->prepare("SELECT ID FROM ORDERS WHERE CUSTOMER_ID=:CUSTOMER_ID AND FINISHED=1");        
+        $query->bindValue(':CUSTOMER_ID', $_SESSION["ID"]);
+        $query->execute();
+        if ($query->rowCount()==1) {
+            $orders = $query->fetchAll(PDO::FETCH_ASSOC);
+            return $orders;
+        } else {
+            return createOrder($connection);
+        }
+    } catch (PDOException $e) {
+        echo "Error: " . $e->getMessage();
+    }
+}
+
 function getOrder($connection) {
     try {
         $query= $connection->prepare("SELECT ID FROM ORDERS WHERE CUSTOMER_ID=:CUSTOMER_ID AND FINISHED=0");        
