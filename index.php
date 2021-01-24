@@ -10,29 +10,6 @@
 
 <body>
 	<!-- NAVIGATOR OF THE PAGE, IF THE USER IS LOGGED IN IT WILL CHANGE -->
-	<?php
-	$fotousuario = '/resources/usuarios/';
-	$action=$_GET['action'] ?? null;
-	switch ($action) {
-		case 'checkin':
-	        require __DIR__. '/mvc/controller/checkin.php';
-	        break;
-	    case 'login':
-	    	require __DIR__. '/mvc/controller/login.php';
-	    	break;
-	    case 'cuenta':
-	    	require __DIR__. '/mvc/controller/cuenta.php';
-	    	break;
-	    case 'pedidos':
-	    	require __DIR__. '/mvc/controller/pedidos.php';
-	    	break;
-	    case 'carrito':
-	    	require __DIR__. '/mvc/controller/carrito.php';
-	    	break;
-	    case 'logout':
-	    	require __DIR__. '/mvc/controller/logout.php';
-	    	break;
-    } ?>
 	<nav>
 		<?php require __DIR__.'/mvc/controller/navigator.php'; ?>
 	</nav>
