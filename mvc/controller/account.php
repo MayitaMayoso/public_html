@@ -12,6 +12,7 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
     $hash = password_hash($password, PASSWORD_DEFAULT);
     $connexio = connect();
     modify($name, $mail, $hash, $address, $connexio);
+    $_SESSION['NAME'] = $name;
     header( "Location: /../../index.php" );
 } else {
     require __DIR__.'/../view/account.php';
