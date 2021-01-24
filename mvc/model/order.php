@@ -1,7 +1,7 @@
 <?php
 function getHistory($connection) {
     try {
-        $query= $connection->prepare("SELECT ID FROM ORDERS WHERE CUSTOMER_ID=:CUSTOMER_ID AND FINISHED=1");        
+        $query= $connection->prepare("SELECT * FROM ORDERS WHERE CUSTOMER_ID=:CUSTOMER_ID AND FINISHED=1");        
         $query->bindValue(':CUSTOMER_ID', $_SESSION["ID"]);
         $query->execute();
         $orders = $query->fetchAll(PDO::FETCH_ASSOC);
