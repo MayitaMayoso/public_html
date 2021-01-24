@@ -4,7 +4,9 @@ $(document).ready(
 		$("#add-product").on("click",
 			function() {
 				var productId = $(this).closest(".product").data("product");
-				load("/../model/addProduct.php?product=" + productId);
+				$.get( "/../model/addProduct.php?product=" + productId , function( data ) {
+					alert( "Producto añadido a la cesta." );
+				});
 			}
 		);
 	}
