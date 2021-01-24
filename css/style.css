@@ -81,11 +81,11 @@ nav {
     color: var(--main-color);
 }
 
-.name-hover {
+#name-hover {
     position:relative;
 }
 
-.name-hover > ul {
+#name-hover > ul {
     display:none;
     position:absolute;
     top:40px;
