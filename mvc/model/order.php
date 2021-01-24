@@ -58,7 +58,10 @@ function addProduct($product, $order, $connection) {
 
 function emptyCart($order, $connection) {
     try {
-        $query = $connection->prepare("DELETE FROM SALES WHERE ORDER_ID=:ORDER_ID)");
+        $query = $connection->prepare("
+            DELETE FROM SALES 
+            WHERE ORDER_ID=:ORDER_ID
+        ");
         $query->bindValue(':ORDER_ID', $order["ID"]);
         $query->execute();
     }catch(PDOException $e) {
