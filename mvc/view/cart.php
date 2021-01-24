@@ -15,7 +15,7 @@
                 function() {
                     $.get( "/mvc/model/emptyCart.php",
                         function( ) {
-                            console.log("Cesta vaciada.");
+                            $("#content").load("content.php?action=cart");
                         }
                     );
                 }
