@@ -86,7 +86,7 @@ nav {
 }
 
 #menu-hover {
-    width:300px;
+    align-items:center;
     text-align: center;
     display:none;
     position:absolute;
