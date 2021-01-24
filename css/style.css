@@ -248,17 +248,17 @@ nav {
 }
 
 .product button{
-    color: black;
-    background-color: white;
+    background-color: black;
+    color: white;
     height: 40px;
-    width: 100px;
+    width: 300px;
     border-style: solid;
     border-color: black; 
 }
 
 .product button:hover{
-    background-color: black;
-    color: white;
+    color: black;
+    background-color: white;
 }
 
 /* ----------------- FOOTER ------------------ */
