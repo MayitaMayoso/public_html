@@ -76,6 +76,15 @@ nav {
     transition: all .4s ease-in-out;
 }
 
+#history-page {
+    margin: auto;
+    margin-top: 60px;
+    float: center;
+    width: 45%;
+    align-content: center;
+    text-align: center;
+}
+
 .cart {
     margin: auto;
     margin-top: 60px;
