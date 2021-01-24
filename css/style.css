@@ -244,4 +244,5 @@ nav {
 #floating-cart {
     position: fixed;
     background-color: green;
+    z-index: 9999;
 }
