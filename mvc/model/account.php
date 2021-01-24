@@ -1,4 +1,20 @@
+
 <?php
+
+function account($connexio,$id)
+{
+    try {
+        $consulta_usuari = $connexio->prepare("SELECT * from CUSTOMERS where ID=".$id);
+        $consulta_usuari->execute();
+        $resultat_usuari = $consulta_usuari->fetchAll(PDO::FETCH_ASSOC);
+        return $resultat_usuari;
+    } catch
+    (PDOException $e) {
+        echo "Error: " . $e->getMessage();
+    }
+
+}
+
 function modify($name, $mail, $hash, $address, $connection) {
     try {
         $query = $connection->prepare("
