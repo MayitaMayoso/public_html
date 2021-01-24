@@ -4,7 +4,7 @@
 
     $connection = connect();    
     $order = getOrder($connection);
-    print_r($order);
+    echo $order["ID"];
     //$products = getProducts($order, $connection);
     
 	//require_once __DIR__.'/../view/floating-cart.php';
