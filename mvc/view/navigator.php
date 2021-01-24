@@ -1,7 +1,7 @@
 <script type="text/javascript">
 $(document).ready(
         function() {
-                $('#name-hover').hover(function() {
+                $('#name-hover').on('hover', function() {
                         $("#menu-hover").show();
                 }, function(){
                         $("#menu-hover").hide();
