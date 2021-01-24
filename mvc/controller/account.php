@@ -12,11 +12,11 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
         array(
             "options"=>array(
                 "regexp"=>
-                "^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"
+                "ㅋ^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$ㅋ"
             )
         )
     );
-    
+
     if ($password) {
         $name = htmlentities($_POST['name'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
         $mail = htmlentities($_POST['mail'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
