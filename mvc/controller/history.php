@@ -8,10 +8,7 @@
     $history = getHistory($connection);
 
     foreach ($history as $order) {
-        print_r($order);
-        /*
         $products = getProducts($order, $connection);
         require_once __DIR__.'/../view/history.php';
-        */
     }
 ?>
