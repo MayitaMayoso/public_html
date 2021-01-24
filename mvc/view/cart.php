@@ -62,7 +62,7 @@
     );
 </script>
 
-<div class="cart">
+<div class="cart" id="cart">
     <h2> Shopping Cart </h2>
     <?php $TOTAL_PRICE=0; $TOTAL_PRODUCTS=0; ?>
     <?php foreach ($products as $prod):?>

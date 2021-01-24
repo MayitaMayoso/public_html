@@ -70,15 +70,12 @@ nav {
 
 .nav-links li a:hover { transform: scale(1.1); }
 
-.carrito{
+.carrito {
     width: auto;
     height: 2vw;
     transition: all .4s ease-in-out;
 }
 
-.cart h2 {
-    color: red;
-}
 .cart {
     margin: auto;
     margin-top: 60px;
@@ -88,6 +85,18 @@ nav {
     text-align: center;
 }
 
+#cart {
+    margin: auto;
+    margin-top: 60px;
+    float: center;
+    width: 45%;
+    align-content: center;
+    text-align: center;
+}
+
+.cart h2 {
+    color: red;
+}
 
 .cart-product button{
     background-color: var(--third-shade);
