@@ -9,7 +9,7 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
         array(
             "options"=>array(
                 "regexp"=>
-                "ㅋ^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$ㅋ"
+                "/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/"
             )
         )
     );
