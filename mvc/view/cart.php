@@ -5,7 +5,7 @@
                 function() {
                     $.get( "/mvc/model/buyCart.php" , 
                         function( ) {
-                            console.log("Cesta comprada");
+                            $("#content").load("content.php?action=cart");
                         }
                     );
                 }
