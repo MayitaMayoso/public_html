@@ -118,7 +118,8 @@ nav {
     width: calc(100vw/3);
     height: 92vh;
     background-size: auto 100%;
-    transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;    
+    background-image: url("../resources/pantalons.jpg");
 }
 
 .Pantalones {
