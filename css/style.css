@@ -97,7 +97,7 @@ nav {
   }
 }
 
-.edit input {
+#edit input {
   border: none;
   background: hsl(0 0% 93%);
   border-radius: .25rem;
