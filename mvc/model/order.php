@@ -37,7 +37,7 @@ function getProducts($order, $connection) {
             and S.PRODUCT_ID = P.ID
             and O.ID = :order_id
             GROUP BY P.NAME
-        ");        
+        ");
         $query->bindValue(':order_id', $order);
         $query->execute();
         return $query->fetchAll(PDO::FETCH_ASSOC);
