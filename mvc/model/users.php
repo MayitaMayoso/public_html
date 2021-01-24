@@ -6,6 +6,7 @@ function login(string $mail,string $password)
         $query = $connection->prepare("SELECT * FROM CUSTOMER WHERE MAIL=:MAIL LIMIT 1");
         $query->bindValue(':MAIL', $mail);
         $query->execute();
+        print_r($query);
         $result = $query->fetch(PDO::FETCH_ASSOC);
         print_r($result);
         if ($result == false) return null;
