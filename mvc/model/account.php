@@ -13,9 +13,9 @@ function account($connexio,$id)
 
 }
 
-function modify($name, $mail, $hash, $address, $connection, $id) {
+function modify($name, $mail, $hash, $address, $connexio, $id) {
     try {
-        $query = $connection->prepare("
+        $query = $connexio->prepare("
             UPDATE CUSTOMERS
             SET MAIL=:mail, PASSWORD=:hash, NAME=:name, ADDRESS=:address
             WHERE ID=:id
@@ -32,10 +32,10 @@ function modify($name, $mail, $hash, $address, $connection, $id) {
     }
 }
 
-function subirimg($connection,$id,$path)
+function subirimg($connexio,$id,$path)
 {
     try {
-        $query = $connection->prepare("UPDATE CUSTOMERS SET `IMG`=:pathimg  WHERE ID=".$id);
+        $query = $connexio->prepare("UPDATE CUSTOMERS SET `IMG`=:pathimg  WHERE ID=".$id);
         $query->bindValue(':pathimg', $path);
 
         if($query->execute())

@@ -10,10 +10,10 @@
 </head>
 
 <body>
-	<?php		
-		session_start();
+	<?php	
 		$pathpublico = '/resources/accounts/';
-		$pathlocal = '/home/TDIW/tdiw-e17/public_html/resources/accounts/';
+		$pathlocal = '/home/TDIW/tdiw-e17/public_html/resources/accounts/';	
+		session_start();
 	?>
 	<!-- NAVIGATOR OF THE PAGE, IF THE USER IS LOGGED IN IT WILL CHANGE -->
 	<nav>

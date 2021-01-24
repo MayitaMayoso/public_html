@@ -26,7 +26,7 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
 	}
 
 
-	if(modify($name, $mail, $hash, $address, $connection, $id)) {
+	if(modify($name, $mail, $hash, $address, $connexio, $id)) {
 	    require_once __DIR__.'/../controller/account.php';
 	}
 }
