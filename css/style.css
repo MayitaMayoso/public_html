@@ -85,17 +85,7 @@ nav {
     text-align: center;
 }
 
-#login input,#checkin-form input {
-  border: none;
-  background: hsl(0 0% 93%);
-  border-radius: .25rem;
-  padding: .75rem 1rem;
-  
-  &[type="submit"] {
-    background: var(--main-color);
-    color: white;
-  }
-}
+
 .cart {
     margin: auto;
     margin-top: 60px;
