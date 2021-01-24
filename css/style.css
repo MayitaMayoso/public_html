@@ -76,6 +76,9 @@ nav {
     transition: all .4s ease-in-out;
 }
 
+.cart h2 {
+    color: red;
+}
 .cart {
     margin: auto;
     margin-top: 60px;
