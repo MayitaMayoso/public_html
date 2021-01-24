@@ -17,6 +17,12 @@ if (isset($_GET["action"])) {
         case 'logout':
             include __DIR__.'/mvc/controller/logout.php';
             break;
+        case 'account':
+            include __DIR__.'/mvc/controller/account.php';
+            break;
+        case 'history':
+            include __DIR__.'/mvc/controller/history.php';
+            break;
         case 'cart':
             include __DIR__.'/mvc/controller/cart.php';
             break;

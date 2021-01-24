@@ -31,9 +31,8 @@ $(document).ready(
 
 <ul class="nav-links">
         <?php if (isset($_SESSION['ID'])) { ?>
-                <li class="name-nav"><?php echo $_SESSION['NAME']; ?></li>
-                <li><a id="account-link" href="./../index.php?action=cuenta">Mi cuenta</a></li>
-                <li><a id="orders-link" href="./../index.php?action=pedidos">Mis pedidos</a></li>
+                <li><a id="account-link" href="./../index.php?action=account"><?php echo ucwords($_SESSION['NAME']); ?></a></li>
+                <li><a id="orders-link" href="./../index.php?action=history">Mis pedidos</a></li>
                 <li><a id="logout-link" href="./../index.php?action=logout">Salir</a></li>
                 <li><a id="cart-link" href="./../index.php?action=cart"><img class="carrito" src="resources/carrito.svg" /></a></li>
         <?php } else { ?>
