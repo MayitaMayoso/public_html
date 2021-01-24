@@ -11,7 +11,7 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
     if ($user) {
         echo "Login correcto";
         $_SESSION['ID'] = $user['ID'];
-        require 'content.php';
+        require __DIR__.'/../../content.php';
     } else {
         echo "Error login";
         require __DIR__.'/../view/login.php';
