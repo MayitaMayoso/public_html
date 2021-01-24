@@ -11,6 +11,7 @@ function login(string $mail,string $password)
                 #'PASSWORD' => $password,
             ]
         );
+        print_r($echo);
         $result = $conec->fetch(PDO::FETCH_ASSOC);
         if ($result == false)
             return null;
