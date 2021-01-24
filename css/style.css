@@ -85,14 +85,18 @@ nav {
     position:relative;
 }
 
-#menu-hover {
-    align-items:center;
+#menu-hover { 
+    width: 100%;
     text-align: center;
     display:none;
     position:absolute;
     line-height: 32px;
     z-index:9999;
     top: 20px;
+}
+
+#menu-hover li {    
+    width: 100%;
 }
 
 /* --------------- CONTENT --------------- */
