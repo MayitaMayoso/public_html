@@ -4,7 +4,7 @@ $(document).ready(
 		$("#add-product").on("click",
 			function() {
 				var productId = $(this).closest(".product").data("product");
-				$.get( "/model/addProduct.php?product=" + productId , function( data ) {
+				$.get( "../model/addProduct.php?product=" + productId , function( data ) {
 					alert( "Producto añadido a la cesta." );
 				});
 			}
