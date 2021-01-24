@@ -6,7 +6,7 @@ function getOrder($connection) {
         $query->execute();
         if ($query->rowCount()==1) {
             $order = $query->fetchAll(PDO::FETCH_ASSOC);
-            return $order;
+            return $order[0];
         } else {
             return createOrder($connection);
         }
@@ -38,7 +38,7 @@ function getProducts($order, $connection) {
             and O.ID = :order_id
             GROUP BY P.NAME
         ");
-        $query->bindValue(':order_id', $order);
+        $query->bindValue(':order_id', $order["ID"]);
         $query->execute();
         return $query->fetchAll(PDO::FETCH_ASSOC);
     } catch (PDOException $e) {
