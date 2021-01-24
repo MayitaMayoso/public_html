@@ -16,7 +16,7 @@ if (isset($_GET["action"])) {
             break;
         default:        
             include __DIR__.'/mvc/controller/categories.php';
-            break
+            break;
     }
 } else {
     include __DIR__.'/mvc/controller/categories.php';
