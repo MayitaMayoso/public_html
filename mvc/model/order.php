@@ -55,4 +55,28 @@ function addProduct($product, $order, $connection) {
         echo "Error:" .$e->getMessage();
     }
 }
+
+function emptyCart($order, $connection) {
+    try {
+        $query = $connection->prepare("DELETE FROM SALES WHERE ORDER_ID=:ORDER_ID)");
+        $query->bindValue(':ORDER_ID', $order["ID"]);
+        $query->execute();
+    }catch(PDOException $e) {
+        echo "Error:" .$e->getMessage();
+    }
+}
+
+function buyCart($order, $connection) {
+    try {
+        $query = $connection->prepare("
+            UPDATE SALES
+            SET FINISHED=1
+            WHERE ORDER_ID=:ORDER_ID
+        ");
+        $query->bindValue(':ORDER_ID', $order["ID"]);
+        $query->execute();
+    }catch(PDOException $e) {
+        echo "Error:" .$e->getMessage();
+    }
+}
 ?>
