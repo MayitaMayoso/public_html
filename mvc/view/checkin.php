@@ -1,11 +1,11 @@
 <script type="text/javascript">
     function checkinFunction() {
-        $("#content").load("content.php?action=checkin");
         console.log("me he registrado");
+        $("#content").load("content.php?action=checkin");
     }
 </script>
 
-<form id="checkin-form" method="post" action="#" onsubmit="checkinFunction()">
+<form id="checkin-form" method="post" action="javascript:checkinFunction()">
     <input placeholder="Nombre" name="name" type="text"><br><br>
     <input placeholder="Mail" name="mail" type="email"><br><br>
     <input placeholder="Dirección" name="address" type="text"><br><br>
