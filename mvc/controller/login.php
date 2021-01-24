@@ -8,11 +8,11 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
     $password = htmlentities($_POST['PASSWORD'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
     $user = login($mail, $password);
     if ($user) {
-        var_dump($user);
+        echo "Login correcto"
         $_SESSION['ID'] = $user['ID'];
         require __DIR__.'/../../content.php';
     } else {
-        var_dump($user);
+        echo "Error login"
         require __DIR__.'/../view/login.php';
     }
 } else {
