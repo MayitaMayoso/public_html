@@ -22,6 +22,12 @@
 	<div class="content" id="content">		
 		<?php require __DIR__.'/content.php'; ?>
 	</div>
+
+	<!-- SHOPPING CART -->
+	<footer id="floating-cart">
+		<?php require __DIR__.'/mvc/controller/floating-cart.php'; ?>
+	</footer>
+
 </body>
 
 </html>
