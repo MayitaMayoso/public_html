@@ -47,7 +47,7 @@ nav {
     list-style: none;
 }
 
-.name-hover {
+#name-hover {
     color: var(--main-color);
     display: inline-block;
     text-decoration: none;
@@ -90,7 +90,7 @@ nav {
     position:absolute;
     line-height: 32px;
     z-index:9999;
-    top: -20px;
+    top: 20px;
 }
 
 /* --------------- CONTENT --------------- */
