@@ -3,10 +3,12 @@ $(document).ready(
         function() {
                 $("#name-hover").on('mouseenter', '#menu-hover', function() {
                         $(this).show();
+                        console.log("entramos en el boton");
                 });
 
                 $("#name-hover").on('mouseleave', '#menu-hover', function() {
                         $(this).hide();
+                        console.log("salimos del el boton");
                 });
 
                 $("#checkin-link").on("click",
