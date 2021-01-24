@@ -105,6 +105,11 @@ nav {
     font-size: 18px;
 }
 
+#buy-cart,#empty-cart:hover{
+    background-color: white;
+    color: var(--third-shade);
+}
+
 .cart-product button{
     background-color: white;
     color: black;
@@ -142,10 +147,7 @@ nav {
     right: 75px;
     background-color: var(--third-shade);
 }
-#name-hover,#menu-hover:hover{
-    background-color: white;
-    color: var(--third-shade);
-}
+
 
 #menu-hover li {    
     width: 200px;
