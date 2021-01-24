@@ -32,4 +32,19 @@ function modify($name, $mail, $hash, $address, $connection, $id) {
     }
 }
 
+function subirimg($connection,$id,$path)
+{
+    try {
+        $query = $connection->prepare("UPDATE CUSTOMERS SET `IMG`=:pathimg  WHERE ID=".$id);
+        $query->bindValue(':pathimg', $path);
+
+        if($query->execute())
+            return true;
+        else
+            return false;
+
+    }catch(PDOException $e)
+    {echo "Error:" .$e->getMessage();}
+}
+
 ?>
