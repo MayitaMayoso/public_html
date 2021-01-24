@@ -1,19 +1,24 @@
 <script type="text/javascript">
     $(document).ready(
-
+        $("#floating-cart").hide();
+        
         $("#buy-cart").on("click",
 			function() {
-				$.get( "/mvc/model/buyCart.php" , function( ) {
-					console.log("Cesta comprada");
-				});
+				$.get( "/mvc/model/buyCart.php" , 
+                    function( ) {
+					    console.log("Cesta comprada");
+				    }
+                );
 			}
 		);
 
         $("#empty-cart").on("click",
 			function() {
-				$.get( "/mvc/model/emptyCart.php", function( ) {
-					console.log("Cesta vaciada.");
-				});
+				$.get( "/mvc/model/emptyCart.php",
+                    function( ) {
+					    console.log("Cesta vaciada.");
+				    }
+                );
 			}
 		);
     );
