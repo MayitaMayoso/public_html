@@ -5,7 +5,8 @@
                 function() {
                     $.get( "/mvc/model/buyCart.php" , 
                         function( ) {
-                            $("#content").load("content.php?action=cart");
+                            $("#content").load("content.php?action=cart");   
+					        $("#floating-cart").load('/mvc/controller/floating-cart.php');
                         }
                     );
                 }
@@ -16,6 +17,7 @@
                     $.get( "/mvc/model/emptyCart.php",
                         function( ) {
                             $("#content").load("content.php?action=cart");
+					        $("#floating-cart").load('/mvc/controller/floating-cart.php');
                         }
                     );
                 }
