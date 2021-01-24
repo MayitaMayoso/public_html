@@ -224,9 +224,10 @@ nav {
 }
 
 .product{
-    float: left;
+    float: center;
     width: 45%;
     align-content: center;
+    text-align: center;
 }
 
 .product img {
@@ -237,7 +238,7 @@ nav {
     margin-top: 20px;
     margin-bottom: 30px;
     color: var(--third-shade);
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bold;
 }
 .product h3 {
@@ -255,7 +256,7 @@ nav {
     height: 40px;
     width: 300px;
     border-style: none;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .product button:hover{
