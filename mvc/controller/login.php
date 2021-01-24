@@ -12,7 +12,7 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
         $_SESSION['ID'] = $user['ID'];
         require __DIR__.'/../../content.php?action=products&cat=1';
     } else {
-        echo "Error login"
+        echo "Error login";
         require __DIR__.'/../view/login.php';
     }
 } else {
