@@ -1,7 +1,7 @@
 <?php
 if (isset($_SESSION['ID'])) {
 	unset($_SESSION['ID']);
-	include __DIR__.'/mvc/controller/categories.php';
+	include __DIR__.'/categories.php';
 	exit();
 }
 ?>
