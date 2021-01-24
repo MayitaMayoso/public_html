@@ -88,7 +88,8 @@ nav {
 #menu-hover {
     display:none;
     position:absolute;
-    left:0;
+    z-index:9999;
+    bottom: 40px;
 }
 
 /* --------------- CONTENT --------------- */
