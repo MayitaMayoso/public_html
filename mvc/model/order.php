@@ -73,7 +73,7 @@ function buyCart($order, $connection) {
     try {
         $query = $connection->prepare("
             UPDATE ORDERS
-            SET FINISHED=1, DATE=CURDATE()
+            SET FINISHED=1, DATE=NOW()
             WHERE ID=:ORDER_ID
         ");
         $query->bindValue(':ORDER_ID', $order["ID"]);
