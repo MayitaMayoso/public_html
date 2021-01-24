@@ -84,6 +84,8 @@ nav {
     background-color: var(--third-shade);
     color: white;
     border-style: none;
+    width:30px;
+    height:15px;
     font-size: 15px;
 }
 
