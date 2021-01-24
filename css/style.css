@@ -84,6 +84,10 @@ nav {
     align-content: center;
     text-align: center;
 }
+
+.cart h2 {
+    color: blue;
+}
 .cart-product button{
     background-color: var(--third-shade);
     color: white;
