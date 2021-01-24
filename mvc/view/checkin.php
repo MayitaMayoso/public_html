@@ -1,10 +1,3 @@
-<script type="text/javascript">
-    function checkinFunction() {
-        console.log("me he registrado");
-        $("#content").load("content.php?action=checkin");
-    }
-</script>
-
 <form id="checkin-form" method="POST" action="index.php?action=checkin">
     <input placeholder="Nombre" name="name" type="text"><br><br>
     <input placeholder="Mail" name="mail" type="email"><br><br>
