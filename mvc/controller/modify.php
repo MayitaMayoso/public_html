@@ -20,7 +20,7 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
 	{
 	    $img="img".$id;
 	    $path=$pathlocal.$img;
-	    move_uploaded_file($_FILES['IMG']['imgname'],$path);
+	    move_uploaded_file($_FILES['IMG']['tmp_name'],$path);
 	    subirimg($connexio,$id,$img);
 	}
 
