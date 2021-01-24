@@ -1,7 +1,5 @@
 <script type="text/javascript">
     $(document).ready(
-        $("#floating-cart").hide();
-        
         $("#buy-cart").on("click",
 			function() {
 				$.get( "/mvc/model/buyCart.php" , 
