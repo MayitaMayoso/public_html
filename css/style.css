@@ -245,5 +245,6 @@ nav {
     position: fixed;
     background-color: green;
     z-index: 9999;
-    bottom: 20px;
+    width: 100%;
+    bottom: 0px;
 }
