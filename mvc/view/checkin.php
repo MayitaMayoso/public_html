@@ -1,6 +1,6 @@
 <script type="text/javascript">
     function checkinFunction() {
-        $("#content").load("content.php?action=checkin");
+        $("#content").load("contezsdgsdagnt.php?action=checkin");
         console.log("me he registrado");
     }
 </script>
