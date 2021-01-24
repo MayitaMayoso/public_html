@@ -14,6 +14,9 @@ if (isset($_GET["action"])) {
         case 'login':
             include __DIR__.'/mvc/controller/login.php';
             break;
+        case 'logout':
+            include __DIR__.'/mvc/controller/logout.php';
+            break;
         default:        
             include __DIR__.'/mvc/controller/categories.php';
             break;
