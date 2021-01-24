@@ -44,7 +44,7 @@ $(document).ready(
                 <li id="name-hover">
                 <?php echo ucwords($_SESSION['NAME']); ?>
                 <ul id="menu-hover">
-                        <li><a id="account-link" href="./../index.php?action=account">Modificar perfil</a></li>
+                        <li><a id="account-link" href="./../index.php?action=account">Perfil</a></li>
                         <li><a id="orders-link" href="./../index.php?action=history">Mis pedidos</a></li>
                         <li><a id="logout-link" href="./../index.php?action=logout">Salir</a></li>
                 </ul>

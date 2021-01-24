@@ -88,9 +88,10 @@ nav {
 #menu-hover {
     display:none;
     position:absolute;
+    line-height: 32px;
     z-index:9999;
-    top: 10px;
-    background-color: rgba(255, 255, 255, 50);
+    bottom: 20px;
+    background-color: rgba(0, 0, 0, 50);
 }
 
 /* --------------- CONTENT --------------- */
