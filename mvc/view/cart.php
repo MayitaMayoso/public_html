@@ -6,8 +6,7 @@
 
         $("#buy-cart").on("click",
 			function() {
-				var productId = $(this).closest(".product").data("product");
-				$.get( "/mvc/model/buyCart.php?product=" + productId , function( data ) {
+				$.get( "/mvc/model/buyCart.php" , function( ) {
 					console.log("Cesta comprada");
 				});
 			}
@@ -15,8 +14,7 @@
 
         $("#empty-cart").on("click",
 			function() {
-				var productId = $(this).closest(".product").data("product");
-				$.get( "/mvc/model/emptyCart.php", function( data ) {
+				$.get( "/mvc/model/emptyCart.php", function( ) {
 					console.log("Cesta vaciada.");
 				});
 			}
