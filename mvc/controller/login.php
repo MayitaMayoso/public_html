@@ -4,7 +4,7 @@ require_once __DIR__.'/../model/users.php';
 
 
 if($_SERVER['REQUEST_METHOD']=='POST') {
-    var_dump($_GET)
+    var_dump($_GET);
     $filters = filter_input_array(
         INPUT_POST, [
             'MAIL' => FILTER_DEFAULT,
