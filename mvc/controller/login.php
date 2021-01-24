@@ -8,7 +8,6 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
     $password = htmlentities($_POST['PASSWORD'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
     $user = login($mail, $password);
     if ($user) {
-        session_start();
         $_SESSION['ID'] = $user['ID'];
         print_r($_SESSION);
         require __DIR__.'/categories.php';

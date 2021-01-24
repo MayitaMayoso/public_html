@@ -10,7 +10,9 @@
 </head>
 
 <body>
-	<li><?php echo isset($_SESSION['ID']) ? true : false; ?></li>
+	<?php		
+		session_start();
+	?>
 	<!-- NAVIGATOR OF THE PAGE, IF THE USER IS LOGGED IN IT WILL CHANGE -->
 	<nav>
 		<?php require __DIR__.'/mvc/controller/navigator.php'; ?>
