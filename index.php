@@ -23,10 +23,12 @@
 		<?php require __DIR__.'/content.php'; ?>
 	</div>
 
-	<!-- SHOPPING CART -->
-	<footer id="floating-cart">
-		<?php require __DIR__.'/mvc/controller/floating-cart.php'; ?>
-	</footer>
+	<!-- SHOPPING CART -->	
+	<?php if (isset($_SESSION['ID'])) { ?>
+		<footer id="floating-cart">
+			<?php require __DIR__.'/mvc/controller/floating-cart.php'; ?>
+		</footer>
+	<?php } ?>
 
 </body>
 
