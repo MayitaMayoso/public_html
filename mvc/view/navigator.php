@@ -23,7 +23,7 @@ $(document).ready(
 <div class="nav-space"></div>
 
 <ul class="nav-links">
-        <?php if (isset($_SESSION['ID'])) { ?>
+        <?php if (session_id() != '') { ?>
                 <?php echo $_SESSION['ID']; ?>
                 <li><a id="account-link" href="./../index.php?action=cuenta">Mi cuenta</a></li>
                 <li><a id="orders-link" href="./../index.php?action=pedidos">Mis pedidos</a></li>
