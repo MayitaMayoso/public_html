@@ -23,7 +23,7 @@
                 }
             );
 
-            $("#delete-item").on("click",
+            $("#cart-page.delete-item").on("click",
                 function() {
 					var prod = $(this).data("target");
                     $.get( "/mvc/model/deleteItem.php?product=" + prod,
@@ -35,7 +35,7 @@
                 }
             );
 
-            $("#increase-item").on("click",
+            $("#cart-page.increase-item").on("click",
                 function() {
 					var prod = $(this).data("target");
                     $.get( "/mvc/model/increaseItem.php?product=" + prod,
@@ -47,7 +47,7 @@
                 }
             );
 
-            $("#decrease-item").on("click",
+            $("#cart-page.decrease-item").on("click",
                 function() {
 					var prod = $(this).data("target");
                     $.get( "/mvc/model/decreaseItem.php?product=" + prod,
@@ -69,9 +69,9 @@
     <?php $TOTAL_PRICE+=($prod['TOTAL']*$prod['PRICE']); $TOTAL_PRODUCTS+=$prod['TOTAL']; ?>
     <div class="cart-product"><h3>
         <?php echo $prod['NAME']." x".$prod['TOTAL']."  ".($prod['TOTAL']*$prod['PRICE'])."€"?>
-        <button id="increase-item" type="button" data-target=<?php echo$prod['ID']?>>Añadir</button>
-        <button id="decrease-item" type="button" data-target=<?php echo$prod['ID']?>>Restar</button>
-        <button id="delete-item" type="button" data-target=<?php echo$prod['ID']?>>Eliminar</button>
+        <button class="increase-item" type="button" data-target=<?php echo$prod['ID']?>>Añadir</button>
+        <button class="decrease-item" type="button" data-target=<?php echo$prod['ID']?>>Restar</button>
+        <button class="delete-item" type="button" data-target=<?php echo$prod['ID']?>>Eliminar</button>
     </h3></div>
 <?php endforeach; ?>
 <button id="buy-cart" type="button">¿Efectuar compra!</button>
