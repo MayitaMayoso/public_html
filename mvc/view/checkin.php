@@ -1,6 +1,6 @@
 <script type="text/javascript">
     function checkinFunction() {
-        console.log("me he registrado");
+        console.log(<?php echo $_POST['name']; ?>);
         $("#content").load("content.php?action=checkin");
     }
 </script>
