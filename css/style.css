@@ -90,7 +90,7 @@ nav {
 }
 .cart-product button{
     background-color: var(--third-shade);
-    color: white;
+    color: red;
     border-style: none;
     width:50px;
     height:20px;
