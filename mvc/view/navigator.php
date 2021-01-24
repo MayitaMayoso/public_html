@@ -24,10 +24,10 @@ $(document).ready(
 
 <ul class="nav-links">
         <?php if (isset($_SESSION['ID'])) { ?>
-                <li><?php echo $_SESSION['NAME']; ?></li>
+                <li class="name-nav"><?php echo $_SESSION['NAME']; ?></li>
                 <li><a id="account-link" href="./../index.php?action=cuenta">Mi cuenta</a></li>
                 <li><a id="orders-link" href="./../index.php?action=pedidos">Mis pedidos</a></li>
-                <li><a id="logout-link" href="./../index.php?action=logout">Cerrar sesión</a></li>
+                <li><a id="logout-link" href="./../index.php?action=logout">Salir</a></li>
         <?php } else { ?>
                 <li>    <li>
                 <li><a id="checkin-link" href="#" target="_self">Check-in</a></li>
