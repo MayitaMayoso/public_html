@@ -247,7 +247,7 @@ nav {
     margin-left: 50px;
 }
 
-.add-product button {
+.product button{
     color: black;
     background-color: white;
     height: 40px;
@@ -256,7 +256,7 @@ nav {
     border-color: black; 
 }
 
-.add-product button:hover{
+.product button:hover{
     background-color: black;
     color: white;
 
