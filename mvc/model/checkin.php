@@ -13,9 +13,8 @@ function registre($name, $mail, $hash, $address, $connexio) {
         } else {
             echo "Error 2";
         }
-
-    }catch(PDOException $e)
-    {echo "Error:" .$e->getMessage();}
-
-
+    }catch(PDOException $e) {
+        echo "Error:" .$e->getMessage();
+    }
 }
+?>
