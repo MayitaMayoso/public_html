@@ -10,8 +10,8 @@
         <img class="foto_perfil" src="<?php echo $fotousuario.$resultat_usuari[0]['IMG']?> " alt="<?php echo $resultat_usuari[0]['NAME']?>"/>
         <?php }
         ?><br><br>
-        <input type="file" name="img_user" />
-        Contraseña:<input name="password" type="password"><br><br>
+        <input type="file" name="img_user" /><br><br>
+        Contraseña:<input name="password" type="password">
         <input type="submit" value="Modificar datos"><br><br>
     </form>
 </section>
