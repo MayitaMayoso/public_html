@@ -14,6 +14,13 @@ $(document).ready(
                                 return false;
                         }
                 );
+
+                $("#cart-link").on("click",
+                        function() {
+                                $("#content").load("content.php?action=cart");
+                                return false;
+                        }
+                );
         }
 );
 </script>
@@ -28,7 +35,7 @@ $(document).ready(
                 <li><a id="account-link" href="./../index.php?action=cuenta">Mi cuenta</a></li>
                 <li><a id="orders-link" href="./../index.php?action=pedidos">Mis pedidos</a></li>
                 <li><a id="logout-link" href="./../index.php?action=logout">Salir</a></li>
-                <li><a href="./../index.php?action=carrito"><img class="carrito" src="resources/carrito.svg" /></a></li>
+                <li><a id="cart-link" href="./../index.php?action=cart"><img class="carrito" src="resources/carrito.svg" /></a></li>
         <?php } else { ?>
                 <li>    <li>
                 <li><a id="checkin-link" href="#" target="_self">Check-in</a></li>
