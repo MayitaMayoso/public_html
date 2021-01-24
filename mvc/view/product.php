@@ -1,6 +1,25 @@
+<script>
+$(document).ready(
+	function() {
+		$("#add-product").on("click",
+			function() {
+				<?php					
+					require_once __DIR__ . '/../model/connection.php';
+					require_once __DIR__.'/../model/order.php';
+
+					$connection = connect();    
+					$order = getOrder($connection);
+					addProduct($product, $order, $connection);
+				?>
+			}
+		);
+	}    
+);
+</script>
+
 <div class=product>
-	<h2><?php echo $resultat_product[0]['NAME'];?></h2><br>
-	<p class="price"><?php echo $resultat_product[0]['PRICE'];?></p>
-	<p><?php echo $resultat_product[0]['DESCRIPTION'];?></p><br>
-	<button class="carrito">Añadir al carrito</button>
+	<h2><?php echo $product['NAME'];?></h2><br>
+	<p class="price"><?php echo $product['PRICE'];?></p>
+	<p><?php echo $product['DESCRIPTION'];?></p><br>
+	<button id="add-product" class="carrito">Añadir al carrito</button>
 </div>

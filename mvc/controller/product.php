@@ -4,7 +4,7 @@
 
 	$connexio = connect();
 	$id=$_GET['product'];
-	$resultat_product=getProduct($id,$connexio);
+	$product=getProduct($id,$connexio);
 
 	require_once __DIR__.'/../view/product.php';
 ?>

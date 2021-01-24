@@ -10,5 +10,5 @@ function getProduct($id,$connexio){
         echo "Error: " . $e->getMessage();
     }
 
-    return ($product_resultat);
+    return ($product_resultat[0]);
 }

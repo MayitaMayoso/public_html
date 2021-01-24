@@ -45,4 +45,15 @@ function getProducts($order, $connection) {
         echo "Error: " . $e->getMessage();
     }
 }
+
+function addProduct($product, $order, $connection) {
+    try {
+        var_dump($_SESSION);
+        $query = $connexio->prepare("INSERT INTO SALES (PRODUCT_ID) VALUES (:PRODUCT_ID)");
+        $query->bindValue(':PRODUCT_ID', $product["ID"]);
+        $query->execute();
+    }catch(PDOException $e) {
+        echo "Error:" .$e->getMessage();
+    }
+}
 ?>
