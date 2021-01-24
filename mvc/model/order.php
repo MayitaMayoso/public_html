@@ -38,7 +38,7 @@ function getProducts($order, $connection) {
             and O.ID = :order_id
             GROUP BY P.NAME
         ");        
-        $query->bindValue(':order_id', $order["ID"]);
+        $query->bindValue(':order_id', $order);
         $query->execute();
         return $query->fetchAll(PDO::FETCH_ASSOC);
     } catch (PDOException $e) {
