@@ -4,7 +4,7 @@ $(document).ready(
                 $('#name-hover').hover(function() {
                         $("#menu-hover").fadeIn('slow');
                 }, function(){
-                        $("#menu-hover")..fadeOut('slow');
+                        $("#menu-hover").fadeOut('slow');
                 }
                 );
 
