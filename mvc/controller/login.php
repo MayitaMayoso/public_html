@@ -9,7 +9,7 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
     $user = login($mail, $password);
     if ($user) {
         $_SESSION['ID'] = $user['ID'];
-        require __DIR__.'/categories.php';
+        header( "Location: /../../index.php" );
     } else {
         echo "Error login";
         require __DIR__.'/../view/login.php';
