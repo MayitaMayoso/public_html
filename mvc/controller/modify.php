@@ -20,7 +20,6 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
 	{
 	    $img="img".$id;
 	    $path=$pathlocal.$img;
-	    echo $img;
 	    echo $path;
 	    move_uploaded_file($_FILES['IMG']['tmp_name'],$path);
 	    subirimg($connexio,$id,$img);
@@ -28,6 +27,6 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
 
 
 	if(modify($name, $mail, $hash, $address, $connection, $id)) {
-	    require_once __DIR__.'/account.php';
+	    require_once __DIR__.'/../controller/account.php';
 	}
 }
