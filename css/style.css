@@ -81,6 +81,16 @@ nav {
     color: var(--main-color);
 }
 
+#name-hover {
+    position:relative;
+}
+
+#menu-hover {
+    display:none;
+    position:absolute;
+    bottom:40px;
+    left:0;
+}
 
 /* --------------- CONTENT --------------- */
 
