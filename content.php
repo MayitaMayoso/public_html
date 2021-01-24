@@ -29,6 +29,9 @@ if (isset($_GET["action"])) {
         case 'endshopping':
             include __DIR__.'/mvc/controller/endshopping.php';
             break;
+        case 'modify':
+            include __DIR__.'/mvc/controller/modify.php';
+            break;
         default:        
             include __DIR__.'/mvc/controller/categories.php';
             break;

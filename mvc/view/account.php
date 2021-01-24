@@ -7,7 +7,7 @@
         Dirección:<input name="address" value="<?php echo $resultat_usuari[0]['ADDRESS'];?>"><br><br>
         Foto de perfil:
         <?php if ($resultat_usuari[0]['IMG']!=NULL){?>
-        <img class="foto_perfil" src="<?php echo $fotousuario.$resultat_usuari[0]['IMG']?> " alt="<?php echo $resultat_usuari[0]['NAME']?>"/>
+        <img class="foto_perfil" src="<?php echo '$pathpublico'.$resultat_usuari[0]['IMG']?> " alt="<?php echo $resultat_usuari[0]['NAME']?>"/>
         <?php }
         ?><br><br>
         <input type="file" name="img_user" /><br><br>

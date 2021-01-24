@@ -1,6 +1,4 @@
-
 <?php
-
 function account($connexio,$id)
 {
     try {
@@ -15,7 +13,7 @@ function account($connexio,$id)
 
 }
 
-function modify($name, $mail, $hash, $address, $connection) {
+function modify($name, $mail, $hash, $address, $connection, $id) {
     try {
         $query = $connection->prepare("
             UPDATE CUSTOMERS
@@ -33,4 +31,5 @@ function modify($name, $mail, $hash, $address, $connection) {
         echo "Error:" .$e->getMessage();
     }
 }
+
 ?>
