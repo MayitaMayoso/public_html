@@ -10,7 +10,8 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
     $user = login($mail, $password);
     if ($user) {
         echo "Login correcto";
-        require __DIR__.'/../../content.php';
+        $_SESSION['ID'] = $user['ID'];
+        require __DIR__.'/../../content.php?action=null";
     } else {
         echo "Error login";
         require __DIR__.'/../view/login.php';
