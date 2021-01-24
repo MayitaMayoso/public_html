@@ -1,12 +1,13 @@
 <script type="text/javascript">
 $(document).ready(
         function() {
-                $('#name-hover').on('hover', function() {
-                        $("#menu-hover").show();
-                }, function(){
-                        $("#menu-hover").hide();
-                }
-                );
+                $("#name-hover").on('mouseenter', '#menu-hover', function() {
+                        $(this).show();
+                });
+
+                $("#name-hover").on('mouseleave', '#menu-hover', function() {
+                        $(this).hide();
+                });
 
                 $("#checkin-link").on("click",
                         function() {
