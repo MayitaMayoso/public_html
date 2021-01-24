@@ -3,8 +3,8 @@ $(document).ready(
         function() {
                 $('#name-hover').hover(function() {
                         $(this).find('ul').fadeIn('slow');
-                },
-                function(){
+                        console.log("en hover");
+                }, function(){
                         $(this).find('ul').fadeOut('slow');
                 }
                 );
