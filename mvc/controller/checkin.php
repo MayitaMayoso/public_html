@@ -13,7 +13,7 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
         $address = htmlentities($_POST['address'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
         $hash = password_hash($password, PASSWORD_DEFAULT);
         $connexio = connect();
-        registre($name, $mail, $hash, $address, $connexio)
+        registre($name, $mail, $hash, $address, $connexio);
         require __DIR__.'/../view/checkindata.php';
 	} else {
         echo "Error de registro contraseña muy floja, utilice al menos una mayúscula, minúscula, número, símbolo y 8 carácteres.";
