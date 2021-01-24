@@ -1,5 +1,5 @@
 <?php
-function modify($name, $mail, $hash, $address, $connexio) {
+function modify($name, $mail, $hash, $address, $connection) {
     try {
         $query = $connection->prepare("
             UPDATE CUSTOMERS
