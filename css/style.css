@@ -85,12 +85,10 @@ nav {
     text-align: center;
 }
 
-.cart h2 {
-    color: blue;
-}
+
 .cart-product button{
     background-color: var(--third-shade);
-    color: red;
+    color: white;
     border-style: none;
     width:50px;
     height:20px;
