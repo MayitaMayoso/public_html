@@ -1,6 +1,14 @@
 <script type="text/javascript">
 $(document).ready(
         function() {
+                $('#name-hover').hover(function() {
+                        $(this).find('ul').fadeIn('slow');
+                },
+                function(){
+                        $(this).find('ul').fadeOut('slow');
+                }
+                );
+
                 $("#checkin-link").on("click",
                         function() {
                                 $("#content").load("content.php?action=checkin");
@@ -31,9 +39,13 @@ $(document).ready(
 
 <ul class="nav-links">
         <?php if (isset($_SESSION['ID'])) { ?>
-                <li><a id="account-link" href="./../index.php?action=account"><?php echo ucwords($_SESSION['NAME']); ?></a></li>
-                <li><a id="orders-link" href="./../index.php?action=history">Mis pedidos</a></li>
-                <li><a id="logout-link" href="./../index.php?action=logout">Salir</a></li>
+                <li id="name-hover"><?php echo ucwords($_SESSION['NAME']); ?>
+                <ul id="menu-hover">
+                        <li><a id="account-link" href="./../index.php?action=account">Modificar perfil</a></li>
+                        <li><a id="orders-link" href="./../index.php?action=history">Mis pedidos</a></li>
+                        <li><a id="logout-link" href="./../index.php?action=logout">Salir</a></li>
+                </ul>
+                </li>
                 <li><a id="cart-link" href="./../index.php?action=cart"><img class="carrito" src="resources/carrito.svg" /></a></li>
         <?php } else { ?>
                 <li>    <li>
