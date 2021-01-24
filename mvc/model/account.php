@@ -3,7 +3,7 @@ function modify($name, $mail, $hash, $address, $connection) {
     try {
         $query = $connection->prepare("
             UPDATE CUSTOMERS
-            SET MAIL=:mail, PASSWORD=:hash, NAME:name, ADDRESS=:address
+            SET MAIL=:mail, PASSWORD=:hash, NAME=:name, ADDRESS=:address
             WHERE ID=:id
         ");
         $query->bindValue(':mail', $mail);
