@@ -76,18 +76,6 @@ nav {
     transition: all .4s ease-in-out;
 }
 
-.carrito button {
-    color: black;
-    background-color: white;
-    height: 40px;
-    width: 100px;
-    border-style: solid;
-    border-color: black; 
-}
-
-.carrito button:hover{
-    background-color: black;
-    color: white;
 }
 .usuario{
     width: auto;
@@ -246,7 +234,7 @@ nav {
 }
 
 .price {
-    color: gray;
+    color: var(--third-shade);
     font-size: 25px;
     font-weight: bold;
 }
@@ -258,6 +246,19 @@ nav {
     margin-top: 150px;
     margin-left: 50px;
 }
+
+.add-product button {
+    color: black;
+    background-color: white;
+    height: 40px;
+    width: 100px;
+    border-style: solid;
+    border-color: black; 
+}
+
+.add-product button:hover{
+    background-color: black;
+    color: white;
 
 /* ----------------- FOOTER ------------------ */
 #floating-cart {
