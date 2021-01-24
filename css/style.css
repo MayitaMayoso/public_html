@@ -142,6 +142,10 @@ nav {
     right: 75px;
     background-color: var(--third-shade);
 }
+#name-hover,#menu-hover:hover{
+    background-color: white;
+    color: var(--third-shade);
+}
 
 #menu-hover li {    
     width: 200px;
