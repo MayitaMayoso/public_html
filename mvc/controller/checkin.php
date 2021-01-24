@@ -3,10 +3,10 @@ require_once __DIR__.'/../model/connection.php';
 require_once __DIR__.'/../model/checkin.php';
 
 if($_SERVER['REQUEST_METHOD']=='POST') {
-    $name = htmlentities($_POST['name'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
-    $mail = htmlentities($_POST['mail'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
-    $password = htmlentities($_POST['password'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
-    $address = htmlentities($_POST['address'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
+    $name = $_POST['name'];
+    $mail = $_POST['mail'];
+    $password = $_POST['password'];
+    $address = $_POST['address'];
     $hash = password_hash($password, PASSWORD_DEFAULT);
     $connexio = connect();
     if (registre($name, $mail, $hash, $address, $connexio)) {
