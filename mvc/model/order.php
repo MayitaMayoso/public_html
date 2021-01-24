@@ -17,6 +17,7 @@ function getOrder($connection) {
 
 function createOrder($connection) {
     try {
+        var_dump($_SESSION);
         $query = $connexio->prepare("INSERT INTO ORDERS (CUSTOMER_ID) VALUES (:CUSTOMER_ID)");
         $query->bindValue(':CUSTOMER_ID', $_SESSION["ID"]);
         $query->execute();
