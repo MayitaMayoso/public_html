@@ -224,6 +224,8 @@ nav {
 }
 
 .product{
+    margin: auto;
+    margin-top: 20px;
     float: center;
     width: 45%;
     align-content: center;
