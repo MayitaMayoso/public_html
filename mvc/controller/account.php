@@ -4,12 +4,19 @@ require_once __DIR__.'/../model/account.php';
 
 if($_SERVER['REQUEST_METHOD']=='POST') {    
     if (!isset($_SESSION['ID']))
-        session_start();
-    
+        session_start();    
         
-    $password = filter_var($_POST['password'], FILTER_VALIDATE_REGEX,
-    array("options"=>array("regexp"=>"^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$")));
-
+    $password = filter_var(
+        $_POST['password'],
+        FILTER_VALIDATE_REGEXP,
+        array(
+            "options"=>array(
+                "regexp"=>
+                "^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"
+            )
+        )
+    );
+    
     if ($password) {
         $name = htmlentities($_POST['name'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
         $mail = htmlentities($_POST['mail'], ENT_QUOTES | ENT_HTML5, 'UTF-8');

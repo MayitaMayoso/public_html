@@ -5,7 +5,7 @@ require_once __DIR__.'/../model/checkin.php';
 if($_SERVER['REQUEST_METHOD']=='POST') {
     $password = filter_var(
         $_POST['password'],
-        "FILTER_VALIDATE_REGEX",
+        FILTER_VALIDATE_REGEXP,
         array(
             "options"=>array(
                 "regexp"=>
