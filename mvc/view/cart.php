@@ -62,19 +62,19 @@
     );
 </script>
 
-<div id="cart-page">
-<h2> Shopping Cart </h2>
-<?php $TOTAL_PRICE=0; $TOTAL_PRODUCTS=0; ?>
-<?php foreach ($products as $prod):?>
-    <?php $TOTAL_PRICE+=($prod['TOTAL']*$prod['PRICE']); $TOTAL_PRODUCTS+=$prod['TOTAL']; ?>
-    <div class="cart-product"><h3>
-        <?php echo $prod['NAME']." x".$prod['TOTAL']."  ".($prod['TOTAL']*$prod['PRICE'])."€"?>
-        <button class="increase-item" type="button" data-target=<?php echo$prod['ID']?>>Añadir</button>
-        <button class="decrease-item" type="button" data-target=<?php echo$prod['ID']?>>Restar</button>
-        <button class="delete-item" type="button" data-target=<?php echo$prod['ID']?>>Eliminar</button>
-    </h3></div>
-<?php endforeach; ?>
-<?php echo "Total: (".$TOTAL_PRODUCTS.") ".$TOTAL_PRICE."€"?>
-<button id="buy-cart" type="button">Comprar</button>
-<button id="empty-cart" type="button">Vaciar carrito</button>
+<div id="cart">
+    <h2> Shopping Cart </h2>
+    <?php $TOTAL_PRICE=0; $TOTAL_PRODUCTS=0; ?>
+    <?php foreach ($products as $prod):?>
+        <?php $TOTAL_PRICE+=($prod['TOTAL']*$prod['PRICE']); $TOTAL_PRODUCTS+=$prod['TOTAL']; ?>
+        <div class="cart-product"><h3>
+            <?php echo $prod['NAME']." x".$prod['TOTAL']."  ".($prod['TOTAL']*$prod['PRICE'])."€"?>
+            <button class="increase-item" type="button" data-target=<?php echo$prod['ID']?>>Añadir</button>
+            <button class="decrease-item" type="button" data-target=<?php echo$prod['ID']?>>Restar</button>
+            <button class="delete-item" type="button" data-target=<?php echo$prod['ID']?>>Eliminar</button>
+        </h3></div>
+    <?php endforeach; ?>
+    <?php echo "Total: (".$TOTAL_PRODUCTS.") ".$TOTAL_PRICE."€"?>
+    <button id="buy-cart" type="button">Comprar</button>
+    <button id="empty-cart" type="button">Vaciar carrito</button>
 </div>
