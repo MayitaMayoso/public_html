@@ -74,7 +74,7 @@
         <button class="delete-item" type="button" data-target=<?php echo$prod['ID']?>>Eliminar</button>
     </h3></div>
 <?php endforeach; ?>
-<button id="buy-cart" type="button">¿Efectuar compra!</button>
-<button id="empty-cart" type="button">Vaciar carrito</button>
 <?php echo "Total: (".$TOTAL_PRODUCTS.") ".$TOTAL_PRICE."€"?>
+<button id="buy-cart" type="button">Comprar</button>
+<button id="empty-cart" type="button">Vaciar carrito</button>
 </div>

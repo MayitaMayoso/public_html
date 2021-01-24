@@ -71,9 +71,11 @@ nav {
 .nav-links li a:hover { transform: scale(1.1); }
 
 .carrito{
+    margin: auto;
     width: auto;
     height: 2vw;
     transition: all .4s ease-in-out;
+    text-align: center;
 }
 
 }
@@ -225,7 +227,7 @@ nav {
 
 .product{
     margin: auto;
-    margin-top: 20px;
+    margin-top: 60px;
     float: center;
     width: 45%;
     align-content: center;
