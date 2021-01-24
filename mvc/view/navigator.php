@@ -24,6 +24,7 @@ $(document).ready(
 
 <ul class="nav-links">
         <?php if (isset($_SESSION['ID'])) { ?>
+                <li><?php echo $_SESSION['NAME']; ?></li>
                 <li><a id="account-link" href="./../index.php?action=cuenta">Mi cuenta</a></li>
                 <li><a id="orders-link" href="./../index.php?action=pedidos">Mis pedidos</a></li>
                 <li><a id="logout-link" href="./../index.php?action=logout">Cerrar sesión</a></li>

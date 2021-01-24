@@ -9,6 +9,7 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
     $user = login($mail, $password);
     if ($user) {
         $_SESSION['ID'] = $user['ID'];
+        $_SESSION['NAME'] = $user['NAME'];
         header( "Location: /../../index.php" );
     } else {
         echo "Error login";
