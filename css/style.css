@@ -85,7 +85,7 @@ nav {
     position:relative;
 }
 
-#name-hover > ul {
+#menu-hover {
     display:none;
     position:absolute;
     top:40px;

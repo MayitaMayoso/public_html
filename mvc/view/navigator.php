@@ -2,10 +2,10 @@
 $(document).ready(
         function() {
                 $('#name-hover').hover(function() {
-                        $("#menu-hover").show();
+                        $("#menu-hover").fadeIn();
                         console.log("entramos");
                 }, function(){
-                        $("#menu-hover").hide();
+                        $("#menu-hover").fadeOut();
                         console.log("salimos");
                 }
                 );
