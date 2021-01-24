@@ -1,24 +1,26 @@
 <script type="text/javascript">
     $(document).ready(
-        $("#buy-cart").on("click",
-			function() {
-				$.get( "/mvc/model/buyCart.php" , 
-                    function( ) {
-					    console.log("Cesta comprada");
-				    }
-                );
-			}
-		);
+        function() {
+            $("#buy-cart").on("click",
+                function() {
+                    $.get( "/mvc/model/buyCart.php" , 
+                        function( ) {
+                            console.log("Cesta comprada");
+                        }
+                    );
+                }
+            );
 
-        $("#empty-cart").on("click",
-			function() {
-				$.get( "/mvc/model/emptyCart.php",
-                    function( ) {
-					    console.log("Cesta vaciada.");
-				    }
-                );
-			}
-		);
+            $("#empty-cart").on("click",
+                function() {
+                    $.get( "/mvc/model/emptyCart.php",
+                        function( ) {
+                            console.log("Cesta vaciada.");
+                        }
+                    );
+                }
+            );
+        }
     );
 </script>
 
