@@ -50,7 +50,6 @@ $(document).ready(
                 </ul>
                 </li>
                 <?php } else { ?>
-                <li>    <li>
                 <li><a id="checkin-link" href="#" target="_self">Check-in</a></li>
                 <li><a id="login-link" href="#" target="_self">Log-in</a></li>
         <?php } ?>
