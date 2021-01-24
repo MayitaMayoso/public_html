@@ -23,7 +23,7 @@
                 }
             );
 
-            $("#cart-page.delete-item").on("click",
+            $("#cart-page .delete-item").on("click",
                 function() {
 					var prod = $(this).data("target");
                     $.get( "/mvc/model/deleteItem.php?product=" + prod,
@@ -35,7 +35,7 @@
                 }
             );
 
-            $("#cart-page.increase-item").on("click",
+            $("#cart-page .increase-item").on("click",
                 function() {
 					var prod = $(this).data("target");
                     $.get( "/mvc/model/increaseItem.php?product=" + prod,
@@ -47,7 +47,7 @@
                 }
             );
 
-            $("#cart-page.decrease-item").on("click",
+            $("#cart-page .decrease-item").on("click",
                 function() {
 					var prod = $(this).data("target");
                     $.get( "/mvc/model/decreaseItem.php?product=" + prod,
