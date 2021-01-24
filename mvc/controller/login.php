@@ -10,7 +10,7 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
     if ($user) {
         session_start();
         $_SESSION['ID'] = $user['ID'];
-        require __DIR__.'/categories.php';
+        GOTO("index.php");
     } else {
         echo "Error login";
         require __DIR__.'/../view/login.php';
