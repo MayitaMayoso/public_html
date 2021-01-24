@@ -4,12 +4,8 @@ function getHistory($connection) {
         $query= $connection->prepare("SELECT ID FROM ORDERS WHERE CUSTOMER_ID=:CUSTOMER_ID AND FINISHED=1");        
         $query->bindValue(':CUSTOMER_ID', $_SESSION["ID"]);
         $query->execute();
-        if ($query->rowCount()==1) {
-            $orders = $query->fetchAll(PDO::FETCH_ASSOC);
-            return $orders;
-        } else {
-            return createOrder($connection);
-        }
+        $orders = $query->fetchAll(PDO::FETCH_ASSOC);
+        return $orders;
     } catch (PDOException $e) {
         echo "Error: " . $e->getMessage();
     }
