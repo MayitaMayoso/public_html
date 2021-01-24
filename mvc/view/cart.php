@@ -2,7 +2,7 @@
     $(document).ready(
         function() {
             $("#floating-cart").hide();
-        }
+        };
 
         $("#buy-cart").on("click",
 			function() {
