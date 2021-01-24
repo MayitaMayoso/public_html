@@ -12,7 +12,7 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
         array(
             "options"=>array(
                 "regexp"=>
-                "€ ^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$ €"
+                "/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/"
             )
         )
     );
