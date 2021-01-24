@@ -81,6 +81,37 @@ function emptyCart($order, $connection) {
     }
 }
 
+function deleteItem($product, $order, $connection) {
+    try {
+        $query = $connection->prepare("
+            DELETE FROM SALES 
+            WHERE PRODUCT_ID=:product_id
+            AND ORDER_ID=:order_id
+        ");
+        $query->bindValue(':product_id', $product);
+        $query->bindValue(':ORDER_ID', $order["ID"]);
+        $query->execute();
+    }catch(PDOException $e) {
+        echo "Error:" .$e->getMessage();
+    }
+}
+
+function decreaseItem($product, $order, $connection) {
+    try {
+        $query = $connection->prepare("
+            DELETE FROM SALES
+            WHERE ORDER_ID=:ORDER_ID
+            AND PRODUCT_ID=:PRODUCT_ID
+            LIMIT 1
+        ");
+        $query->bindValue(':PRODUCT_ID', $product);
+        $query->bindValue(':ORDER_ID', $order["ID"]);
+        $query->execute();
+    }catch(PDOException $e) {
+        echo "Error:" .$e->getMessage();
+    }
+}
+
 function buyCart($order, $connection) {
     try {
         $query = $connection->prepare("
