@@ -242,6 +242,7 @@ nav {
 
 /* ----------------- FOOTER ------------------ */
 #floating-cart {
+    text-align: right;
     position: fixed;
     background-color: green;
     z-index: 9999;
