@@ -17,7 +17,6 @@ function getOrder($connection) {
 
 function createOrder($connection) {
     try {
-        var_dump($_SESSION);
         $query = $connexio->prepare("INSERT INTO ORDERS (CUSTOMER_ID) VALUES (:CUSTOMER_ID)");
         $query->bindValue(':CUSTOMER_ID', $_SESSION["ID"]);
         $query->execute();
@@ -48,9 +47,9 @@ function getProducts($order, $connection) {
 
 function addProduct($product, $order, $connection) {
     try {
-        var_dump($_SESSION);
-        $query = $connexio->prepare("INSERT INTO SALES (PRODUCT_ID) VALUES (:PRODUCT_ID)");
-        $query->bindValue(':PRODUCT_ID', $product["ID"]);
+        $query = $connexio->prepare("INSERT INTO SALES (PRODUCT_ID, ORDER_ID) VALUES (:PRODUCT_ID, :ORDER_ID)");
+        $query->bindValue(':PRODUCT_ID', $product);
+        $query->bindValue(':PRODUCT_ID', $order["ID"]);
         $query->execute();
     }catch(PDOException $e) {
         echo "Error:" .$e->getMessage();
