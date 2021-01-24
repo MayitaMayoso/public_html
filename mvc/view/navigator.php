@@ -1,15 +1,14 @@
 <script type="text/javascript">
 $(document).ready(
         function() {
-                $("#name-hover").on('mouseenter', '#menu-hover', function() {
-                        $(this).show();
-                        console.log("entramos en el boton");
-                });
-
-                $("#name-hover").on('mouseleave', '#menu-hover', function() {
-                        $(this).hide();
-                        console.log("salimos del el boton");
-                });
+                $('#name-hover').hover(function() {
+                        $("#menu-hover").show();
+                        console.log("entramos");
+                }, function(){
+                        $("#menu-hover").hide();
+                        console.log("salimos");
+                }
+                );
 
                 $("#checkin-link").on("click",
                         function() {
