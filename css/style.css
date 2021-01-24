@@ -233,6 +233,8 @@ nav {
 }
 
 .price {
+    margin-top: 10px;
+    margin-bottom: 10px;
     color: var(--third-shade);
     font-size: 25px;
     font-weight: bold;
@@ -247,12 +249,11 @@ nav {
 }
 
 .product button{
-    background-color: black;
+    background-color: var(--third-shade);
     color: white;
     height: 40px;
     width: 300px;
-    border-style: solid;
-    border-color: black; 
+    border-style: none;
 }
 
 .product button:hover{
