@@ -47,7 +47,7 @@ nav {
     list-style: none;
 }
 
-.name-nav {
+.name-hover {
     color: var(--main-color);
     display: inline-block;
     text-decoration: none;
@@ -89,6 +89,8 @@ nav {
     display:none;
     position:absolute;
     z-index:9999;
+    top: 10px;
+    background-color: rgba(255, 255, 255, 50);
 }
 
 /* --------------- CONTENT --------------- */
