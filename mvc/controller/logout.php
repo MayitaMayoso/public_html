@@ -1,7 +1,7 @@
 <?php
 if (isset($_SESSION['ID'])) {
 	unset($_SESSION['ID']);
-	header("Refresh:0");
+	include __DIR__.'/mvc/controller/categories.php';
 	exit();
 }
 ?>
