@@ -93,7 +93,6 @@ nav {
     line-height: 32px;
     z-index:9999;
     top: 20px;
-    background-color: var(--third-shade);
 }
 
 #menu-hover li {    
