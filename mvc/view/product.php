@@ -17,6 +17,6 @@ $(document).ready(
 	<h2><?php echo $product['NAME'];?></h2><br>
 	<p><?php echo $product['DESCRIPTION'];?></p><br>
 	<hr>
-	<p class="price"><?php echo $product['PRICE'];?></p>
+	<p class="price"><?php echo $product['PRICE'];?>€</p>
 	<button id="add-product" class="carrito">Añadir al carrito</button>
 </div>
