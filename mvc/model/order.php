@@ -72,7 +72,7 @@ function emptyCart($order, $connection) {
 function buyCart($order, $connection) {
     try {
         $query = $connection->prepare("
-            UPDATE ORDER
+            UPDATE ORDERS
             SET FINISHED=1
             WHERE ID=:ORDER_ID
         ");
