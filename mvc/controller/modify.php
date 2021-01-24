@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/../model/connection.php';
-require_once __DIR__.'/../model/modify.php';
+require_once __DIR__.'/../model/account.php';
 $connexio=connect();
 $id=$_SESSION['ID'];
 $name = $_POST['PASSWORD'];
