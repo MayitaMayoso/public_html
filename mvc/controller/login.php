@@ -10,7 +10,7 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
     if ($user) {
         var_dump($user);
         $_SESSION['ID'] = $user['ID'];
-        require __DIR__.'content.php';
+        require __DIR__.'/content.php';
     } else {
         var_dump($user);
         require __DIR__.'/../view/login.php';
