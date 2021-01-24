@@ -8,5 +8,5 @@ require_once __DIR__.'/../model/order.php';
 $connection = connect();    
 $order = getOrder($connection);
 emptyCart($order, $connection);
-header( "Location: /../../index.php?action=cart" );
+//header( "Location: /../../index.php?action=cart" );
 ?>
