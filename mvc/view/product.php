@@ -5,7 +5,7 @@ $(document).ready(
 			function() {
 				var productId = $(this).closest(".product").data("product");
 				$.get( "/mvc/model/addProduct.php?product=" + productId , function( data ) {
-					alert( "Producto añadido a la cesta." );
+					$("floating-cart").load('/mvc/controller/floating-cart.php');
 				});
 			}
 		);
