@@ -1,0 +1,19 @@
+<?php
+require_once __DIR__.'/../model/connection.php';
+require_once __DIR__.'/../model/account.php';
+
+if($_SERVER['REQUEST_METHOD']=='POST') {    
+    if (!isset($_SESSION['ID']))
+        session_start();
+    $name = htmlentities($_POST['name'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
+    $mail = htmlentities($_POST['mail'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
+    $password = htmlentities($_POST['password'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
+    $address = htmlentities($_POST['address'], ENT_QUOTES | ENT_HTML5, 'UTF-8');    
+    $hash = password_hash($password, PASSWORD_DEFAULT);
+    $connexio = connect();
+    modify($name, $mail, $hash, $address, $connexio);
+    header( "Location: /../../index.php" );
+} else {
+    require __DIR__.'/../view/account.php';
+}
+?>
