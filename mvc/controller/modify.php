@@ -4,16 +4,16 @@ require_once __DIR__.'/../model/account.php';
 
 if($_SERVER['REQUEST_METHOD']=='POST') {
 	$connexio=connect();
-	$id=$_SESSION['ID'];
+	$id = $_SESSION['ID'];
 	$name = $_POST['PASSWORD'];
 	$mail = $_POST['MAIL'];
 	$address = $_POST['ADDRESS'];
 	$password = $_POST['PASSWORD'];
 
-	$name = htmlentities($_POST['name'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
-	$mail = htmlentities($_POST['mail'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
-	$password = htmlentities($_POST['password'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
-	$address = htmlentities($_POST['address'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
+	$name = htmlentities($_POST['NAME'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
+	$mail = htmlentities($_POST['MAIL'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
+	$password = htmlentities($_POST['PASSWORD'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
+	$address = htmlentities($_POST['ADDRESS'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
 	$hash = password_hash($password, PASSWORD_DEFAULT);
 
 	if (!empty($_FILES['IMG']))
