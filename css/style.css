@@ -75,6 +75,20 @@ nav {
     height: 2vw;
     transition: all .4s ease-in-out;
 }
+
+.carrito button {
+    color: black;
+    background-color: white;
+    height: 40px;
+    width: 100px;
+    border-style: solid;
+    border-color: black; 
+}
+
+.carrito button:hover{
+    background-color: black;
+    color: white;
+}
 .usuario{
     width: auto;
     height: 2vw;
