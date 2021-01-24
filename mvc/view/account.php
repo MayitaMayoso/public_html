@@ -11,7 +11,7 @@
         <?php }
         ?><br><br>
         <input type="file" name="img_user" /><br><br>
-        Contraseña:<input name="password" type="password">
+        Contraseña:<input name="password" type="password"><br><br>
         <input type="submit" value="Modificar datos"><br><br>
     </form>
 </section>
