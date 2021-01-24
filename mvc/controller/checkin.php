@@ -4,7 +4,7 @@ require_once __DIR__.'/../model/checkin.php';
 
 if($_SERVER['REQUEST_METHOD']=='POST') {
     $password = filter_var($_POST['password'], FILTER_VALIDATE_REGEX,
-    array("options"=>array("regexp"=>"^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"))));
+    array("options"=>array("regexp"=>"^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$")));
 
     if ($password) {
         $name = htmlentities($_POST['name'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
