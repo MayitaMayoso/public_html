@@ -12,8 +12,8 @@
 <body>
 	<?php		
 		session_start();
-		$pathpublico = '/resources/accounts/'
-		$pathlocal = '/home/TDIW/tdiw-e17/public_html/resources/accounts/'
+		$pathpublico = '/resources/accounts/';
+		$pathlocal = '/home/TDIW/tdiw-e17/public_html/resources/accounts/';
 	?>
 	<!-- NAVIGATOR OF THE PAGE, IF THE USER IS LOGGED IN IT WILL CHANGE -->
 	<nav>
