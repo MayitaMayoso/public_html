@@ -10,6 +10,7 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
     if ($user) {
         session_start();
         $_SESSION['ID'] = $user['ID'];
+        print_r($_SESSION);
         require __DIR__.'/categories.php';
     } else {
         echo "Error login";
