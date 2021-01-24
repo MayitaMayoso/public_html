@@ -11,6 +11,7 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
         session_start();
         $_SESSION['ID'] = $user['ID'];
         require __DIR__.'/categories.php';
+        echo $_SESSION['ID'];
     } else {
         echo "Error login";
         require __DIR__.'/../view/login.php';
