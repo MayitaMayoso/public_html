@@ -81,6 +81,17 @@ nav {
     color: var(--main-color);
 }
 
+.name-hover {
+    position:relative;
+}
+
+.name-hover > ul {
+    display:none;
+    position:absolute;
+    top:40px;
+    left:0;
+}
+
 /* --------------- CONTENT --------------- */
 
 #categories-link {

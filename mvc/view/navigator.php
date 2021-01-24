@@ -39,6 +39,7 @@ $(document).ready(
 
 <ul class="nav-links">
         <?php if (isset($_SESSION['ID'])) { ?>
+                <li><a id="cart-link" href="./../index.php?action=cart"><img class="carrito" src="resources/carrito.svg" /></a></li>
                 <li id="name-hover"><?php echo ucwords($_SESSION['NAME']); ?>
                 <ul id="menu-hover">
                         <li><a id="account-link" href="./../index.php?action=account">Modificar perfil</a></li>
@@ -46,8 +47,7 @@ $(document).ready(
                         <li><a id="logout-link" href="./../index.php?action=logout">Salir</a></li>
                 </ul>
                 </li>
-                <li><a id="cart-link" href="./../index.php?action=cart"><img class="carrito" src="resources/carrito.svg" /></a></li>
-        <?php } else { ?>
+                <?php } else { ?>
                 <li>    <li>
                 <li><a id="checkin-link" href="#" target="_self">Check-in</a></li>
                 <li><a id="login-link" href="#" target="_self">Log-in</a></li>
