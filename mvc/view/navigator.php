@@ -2,10 +2,9 @@
 $(document).ready(
         function() {
                 $('#name-hover').hover(function() {
-                        $(this).find('ul').fadeIn('slow');
-                        console.log("en hover");
+                        $("#menu-hover").fadeIn('slow');
                 }, function(){
-                        $(this).find('ul').fadeOut('slow');
+                        $("#menu-hover")..fadeOut('slow');
                 }
                 );
 
