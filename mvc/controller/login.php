@@ -9,7 +9,6 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
     $password = htmlentities($_POST['PASSWORD'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
     $user = login($mail, $password);
     if ($user) {
-        echo "Login correcto";
         $_SESSION['ID'] = $user['ID'];
         require __DIR__.'/categories.php';
     } else {

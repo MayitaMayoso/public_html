@@ -7,7 +7,6 @@ function login(string $mail,string $password)
         $query->bindValue(':MAIL', $mail);
         $query->execute();
         $result = $query->fetch(PDO::FETCH_ASSOC);
-        print_r($result);
         if ($result == false) return null;
         return password_verify($password,$result['PASSWORD']) ? $result : 0;
 
