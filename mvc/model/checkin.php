@@ -8,11 +8,7 @@ function registre($name, $mail, $hash, $address, $connexio) {
         $consulta_registre->bindValue(':name', $name);
         $consulta_registre->bindValue(':address', $address);
 
-        if($consulta_registre->execute()){
-            echo "Te has registrado";
-        } else {
-            echo "Error 2";
-        }
+        return $consulta_registre->execute();
     }catch(PDOException $e) {
         echo "Error:" .$e->getMessage();
     }

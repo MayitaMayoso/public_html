@@ -9,8 +9,11 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
     $address = $_POST['address'];
     $hash = password_hash($password, PASSWORD_DEFAULT);
     $connexio = connect();
-    registre($name, $mail, $hash, $address, $connexio);
-    require __DIR__.'/../view/checkindata.php';
+    if (registre($name, $mail, $hash, $address, $connexio)) {
+    	require __DIR__.'/../view/checkindata.php';
+	} else {
+        echo "Error de registro";
+    }
 } else {
     require __DIR__.'/../view/checkin.php';
 }
