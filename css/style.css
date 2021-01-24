@@ -88,11 +88,19 @@ nav {
     margin-bottom: 30px;
 }
 
-#buy-cart,#empty-cart{
+#buy-cart{
     background-color: var(--third-shade);
     color: white;
     border-style: none;
     width:100px;
+    height:25px;
+    font-size: 18px;
+}
+#empty-cart{
+    background-color: var(--third-shade);
+    color: white;
+    border-style: none;
+    width:200px;
     height:25px;
     font-size: 18px;
 }
