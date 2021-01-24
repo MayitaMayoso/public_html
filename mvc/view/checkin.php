@@ -3,5 +3,5 @@
     <input placeholder="Mail" name="mail" type="email"><br><br>
     <input placeholder="Dirección" name="address" type="text"><br><br>
     <input placeholder="Contraseña" name="password" type="password"><br><br>
-    <input type="submit" value="Check-in"><br><br>
+    <input id="button-submit" type="submit" value="Check-in"><br><br>
 </form>
