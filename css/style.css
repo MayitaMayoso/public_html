@@ -88,7 +88,7 @@ nav {
     margin-bottom: 30px;
 }
 
-#buy-cart{
+#buy-cart,#empty-cart{
     background-color: var(--third-shade);
     color: white;
     border-style: none;
@@ -108,6 +108,7 @@ nav {
 
 .cart-product button:hover{
     background-color: gray;
+    color: white;
 }
 
 }
