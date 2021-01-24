@@ -10,6 +10,7 @@
 </head>
 
 <body>
+	<li><?php echo $_SESSION['ID']; ?></li>
 	<!-- NAVIGATOR OF THE PAGE, IF THE USER IS LOGGED IN IT WILL CHANGE -->
 	<nav>
 		<?php require __DIR__.'/mvc/controller/navigator.php'; ?>
