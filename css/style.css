@@ -48,7 +48,7 @@ nav {
 }
 
 #name-hover {
-    color: var(--main-color);
+    color: white;
     display: inline-block;
     text-decoration: none;
     letter-spacing: 3px;
@@ -93,10 +93,12 @@ nav {
     line-height: 32px;
     z-index:9999;
     top: 20px;
+    background-color: var(--third-shade);
 }
 
 #menu-hover li {    
     width: 100%;
+    background-color: var(--third-shade);
 }
 
 /* --------------- CONTENT --------------- */
