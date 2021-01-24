@@ -9,6 +9,6 @@
 
     foreach ($history as $order) {
         $products = getProducts($order, $connection);
-        require_once __DIR__.'/../view/history.php';
+        require __DIR__.'/../view/history.php';
     }
 ?>
