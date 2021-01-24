@@ -78,7 +78,7 @@ nav {
 .usuario{
     width: auto;
     height: 2vw;
-    color: var(--main-color);
+    color: white;
 }
 
 #name-hover {
@@ -245,7 +245,8 @@ nav {
 #floating-cart {
     text-align: right;
     position: fixed;
-    background-color: green;
+    background-color: var(--main-color);
+    text-decoration-color: var(--third-shade);
     z-index: 9999;
     width: 100%;
     bottom: 0px;
