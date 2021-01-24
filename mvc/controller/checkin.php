@@ -3,7 +3,7 @@ require_once __DIR__.'/../model/connection.php';
 require_once __DIR__.'/../model/checkin.php';
 
 if($_SERVER['REQUEST_METHOD']=='POST') {
-    console.log("Message here");
+    console.log("checkin done");
     $name = $_POST['name'];
     $mail = $_POST['mail'];
     $password = $_POST['password'];
@@ -14,6 +14,7 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
     	require __DIR__.'/../view/checkindata.php';
 	}
 } else {
+    console.log("to do the checkin");
     require __DIR__.'/../view/checkin.php';
 }
 ?>
