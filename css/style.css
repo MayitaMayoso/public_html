@@ -92,7 +92,7 @@ nav {
   padding: .75rem 1rem;
   
   &[type="submit"] {
-    background: var(--third-shade);
+    background: var(--main-color);
     color: white;
   }
 }
