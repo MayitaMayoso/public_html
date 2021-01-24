@@ -17,7 +17,7 @@ function getOrder($connection) {
 
 function createOrder($connection) {
     try {
-        $query = $connexio->prepare("INSERT INTO ORDERS (CUSTOMER_ID) VALUES (:CUSTOMER_ID)");
+        $query = $connection->prepare("INSERT INTO ORDERS (CUSTOMER_ID) VALUES (:CUSTOMER_ID)");
         $query->bindValue(':CUSTOMER_ID', $_SESSION["ID"]);
         $query->execute();
 
@@ -47,7 +47,7 @@ function getProducts($order, $connection) {
 
 function addProduct($product, $order, $connection) {
     try {
-        $query = $connexio->prepare("INSERT INTO SALES (PRODUCT_ID, ORDER_ID) VALUES (:PRODUCT_ID, :ORDER_ID)");
+        $query = $connection->prepare("INSERT INTO SALES (PRODUCT_ID, ORDER_ID) VALUES (:PRODUCT_ID, :ORDER_ID)");
         $query->bindValue(':PRODUCT_ID', $product);
         $query->bindValue(':PRODUCT_ID', $order["ID"]);
         $query->execute();
