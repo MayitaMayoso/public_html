@@ -16,6 +16,7 @@
                 function() {
                     $.get( "/mvc/model/emptyCart.php",
                         function( ) {
+                            $("#content").load("content.php?action=cart");
 					        $("#floating-cart").load('/mvc/controller/floating-cart.php');
                         }
                     );
